@@ -1,0 +1,2670 @@
+!SESSION 2019-09-01 03:58:14.788 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=1.8.0_211
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ccw.core 1 0 2019-09-01 03:58:44.976
+!MESSAGE CCWPlugin.start(): ENTER
+
+!ENTRY ccw.core 1 0 2019-09-01 03:58:50.379
+!MESSAGE Counterclockwise dependencies:
+        [bultitude "0.2.1"]
+        [ccw/ccw.server "0.2.1"]
+        [ccw/clojure-ccw "1.7.0"]
+        [cheshire "5.0.2"]
+        [classlojure "0.6.6"]
+        [clj-http "0.9.2"]
+        [clj-stacktrace "0.2.7"]
+        [clj-tuple "0.1.2"]
+        [clojure-complete "0.2.3"]
+        [com.cemerick/drawbridge "0.0.6"]
+        [com.cemerick/pomegranate "0.3.0"]
+        [com.fasterxml.jackson.core/jackson-core "2.1.3"]
+        [com.fasterxml.jackson.dataformat/jackson-dataformat-smile "2.1.2"]
+        [com.hypirion/io "0.3.1"]
+        [commons-codec "1.9"]
+        [commons-fileupload "1.2.1"]
+        [commons-io "2.4"]
+        [commons-lang "2.6"]
+        [commons-logging "1.1.3"]
+        [dynapath "0.2.0"]
+        [jline "2.12"]
+        [leiningen "2.5.1"]
+        [leiningen-core "2.5.1"]
+        [net.cgrand/parsley "0.9.2"]
+        [net.cgrand/regex "1.1.0"]
+        [net.cgrand/sjacket "0.1.1"]
+        [net.mikera/cljunit "0.2.0"]
+        [org.apache.httpcomponents/httpclient "4.3.3"]
+        [org.apache.httpcomponents/httpcore "4.3.2"]
+        [org.apache.httpcomponents/httpmime "4.3.3"]
+        [org.apache.maven/maven-aether-provider "3.0.4"]
+        [org.apache.maven/maven-model "3.0.4"]
+        [org.apache.maven/maven-model-builder "3.0.4"]
+        [org.apache.maven/maven-repository-metadata "3.0.4"]
+        [org.apache.maven.indexer/indexer-artifact "4.1.3"]
+        [org.apache.maven.indexer/indexer-core "4.1.3"]
+        [org.apache.maven.wagon/wagon-http "2.7"]
+        [org.apache.maven.wagon/wagon-http-shared "2.7"]
+        [org.apache.maven.wagon/wagon-provider-api "2.2"]
+        [org.clojure/clojure-contrib "1.2.0"]
+        [org.clojure/core.incubator "0.1.0"]
+        [org.clojure/data.xml "0.0.3"]
+        [org.clojure/java.classpath "0.2.2"]
+        [org.clojure/java.data "0.1.1"]
+        [org.clojure/tools.cli "0.3.1"]
+        [org.clojure/tools.logging "0.2.3"]
+        [org.clojure/tools.macro "0.1.1"]
+        [org.clojure/tools.nrepl "0.2.10"]
+        [org.clojure/tools.reader "0.8.4"]
+        [org.codehaus.plexus/plexus-classworlds "2.4"]
+        [org.codehaus.plexus/plexus-component-annotations "1.5.5"]
+        [org.codehaus.plexus/plexus-interpolation "1.14"]
+        [org.codehaus.plexus/plexus-utils "2.0.6"]
+        [org.jsoup/jsoup "1.7.2"]
+        [org.sonatype.aether/aether-api "1.13.1"]
+        [org.sonatype.aether/aether-connector-file "1.13.1"]
+        [org.sonatype.aether/aether-connector-wagon "1.13.1"]
+        [org.sonatype.aether/aether-impl "1.13.1"]
+        [org.sonatype.aether/aether-spi "1.13.1"]
+        [org.sonatype.aether/aether-util "1.13.1"]
+        [org.sonatype.sisu/sisu-inject-bean "2.2.3"]
+        [org.sonatype.sisu/sisu-inject-plexus "2.2.3"]
+        [org.tcrawley/dynapath "0.2.3"]
+        [pedantic "0.2.0"]
+        [potemkin "0.3.4"]
+        [prismatic/schema "0.4.4"]
+        [quoin "0.1.2"]
+        [reply "0.3.5"]
+        [riddley "0.1.6"]
+        [ring/ring-core "1.0.2"]
+        [robert/hooke "1.3.0"]
+        [scout "0.1.0"]
+        [slingshot "0.10.3"]
+        [stencil "0.3.5"]
+        [trptcolin/versioneer "0.1.1"]
+
+!ENTRY ccw.core 1 0 2019-09-01 03:59:19.571
+!MESSAGE CCWPlugin.start(): EXIT
+
+!ENTRY org.eclipse.egit.core 1 0 2019-09-01 03:59:20.759
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-09-01 03:59:22.180
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-09-01 03:59:22.180
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@439d649c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(pl.szpinda.plugin.tomcat.commands.tomcatStartStop,Tomcat start,stop,
+		,
+		Category(pl.szpinda.plugin.tomcat.commands.category.key,Tomcat keys,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6e475994,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-09-01 03:59:22.180
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@55a2f08b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1a99744a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jface.text 2 0 2019-09-01 03:59:26.451
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-09-01 03:59:36.748
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Utilisateur'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 4 0 2019-09-01 03:59:40.661
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-09-01 03:59:40.665
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.equinox.event 4 0 2019-09-01 03:59:40.763
+!MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/model/commands/HandlerContainer/handlers/ADD] {ChangedElement=org.eclipse.e4.legacy.ide.application=org.eclipse.e4.ui.model.application.impl.ApplicationImpl@31e7afde (tags: [activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration, ModelMigrationProcessor.001], contributorURI: platform:/plugin/org.eclipse.platform) (widget: null, renderer: null, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (context: WorkbenchContext, variables: null), org.eclipse.e4.data={ChangedElement=org.eclipse.e4.legacy.ide.application=org.eclipse.e4.ui.model.application.impl.ApplicationImpl@31e7afde (tags: [activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration, ModelMigrationProcessor.001], contributorURI: platform:/plugin/org.eclipse.platform) (widget: null, renderer: null, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (context: WorkbenchContext, variables: null), AttName=handlers, EventType=ADD, Position=0, Widget=null, NewValue=ansi-repl/__ansi-repl-status-handler=org.eclipse.e4.ui.model.application.commands.impl.HandlerImpl@14adc0ae (tags: [ccw], contributorURI: null) (contributionURI: bundleclass://ccw.core/clojure/ccw.e4.dsl/handler-factory/ansi-repl/display-status, object: null)}, AttName=handlers, EventType=ADD, Position=0, Widget=null, NewValue=ansi-repl/__ansi-repl-status-handler=org.eclipse.e4.ui.model.application.commands.impl.HandlerImpl@14adc0ae (tags: [ccw], contributorURI: null) (contributionURI: bundleclass://ccw.core/clojure/ccw.e4.dsl/handler-factory/ansi-repl/display-status, object: null)} to handler org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler@356af560
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:91)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at clojure.lang.Reflector.invokeMatchingMethod(Reflector.java:93)
+	at clojure.lang.Reflector.invokeInstanceMethod(Reflector.java:28)
+	at ccw.e4.model$add_handler_BANG_.invoke(model.clj:654)
+	at ccw.e4.model$merge_handler_BANG_.invoke(model.clj:800)
+	at ansi_repl$eval101.invoke(ansi-repl.clj:222)
+	at clojure.lang.Compiler.eval(Compiler.java:6804)
+	at clojure.lang.Compiler.eval(Compiler.java:6794)
+	at clojure.lang.Compiler.load(Compiler.java:7249)
+	at clojure.lang.Compiler.loadFile(Compiler.java:7187)
+	at clojure.lang.RT$3.invoke(RT.java:319)
+	at ccw.core.user_plugins$load_user_script.invoke(user_plugins.clj:110)
+	at ccw.core.user_plugins$start_user_plugin$fn__8948.invoke(user_plugins.clj:125)
+	at ccw.core.user_plugins$with_bundle$reify__8934.run(user_plugins.clj:89)
+	at ccw.util.osgi.ClojureOSGi.withBundle(ClojureOSGi.java:107)
+	at ccw.core.user_plugins$with_bundle.invoke(user_plugins.clj:86)
+	at ccw.core.user_plugins$start_user_plugin.invoke(user_plugins.clj:119)
+	at ccw.core.user_plugins$load_user_plugins.invoke(user_plugins.clj:163)
+	at ccw.core.user_plugins$start_user_plugins$fn__8984.invoke(user_plugins.clj:197)
+	at clojure.core$binding_conveyor_fn$fn__4444.invoke(core.clj:1916)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:145)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.handleHandlerEvent(HandlerProcessingAddon.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 43 more
+
+!ENTRY ccw.core 1 0 2019-09-01 03:59:40.799
+!MESSAGE Loaded User Script C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-ansi-repl\ansi-repl.clj
+
+!ENTRY ccw.core 1 0 2019-09-01 03:59:40.801
+!MESSAGE Loaded User Plugin: C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-ansi-repl
+
+!ENTRY org.eclipse.equinox.event 4 0 2019-09-01 03:59:40.870
+!MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/model/commands/HandlerContainer/handlers/ADD] {ChangedElement=org.eclipse.e4.legacy.ide.application=org.eclipse.e4.ui.model.application.impl.ApplicationImpl@31e7afde (tags: [activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration, ModelMigrationProcessor.001], contributorURI: platform:/plugin/org.eclipse.platform) (widget: null, renderer: null, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (context: WorkbenchContext, variables: null), org.eclipse.e4.data={ChangedElement=org.eclipse.e4.legacy.ide.application=org.eclipse.e4.ui.model.application.impl.ApplicationImpl@31e7afde (tags: [activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration, ModelMigrationProcessor.001], contributorURI: platform:/plugin/org.eclipse.platform) (widget: null, renderer: null, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (context: WorkbenchContext, variables: null), AttName=handlers, EventType=ADD, Position=0, Widget=null, NewValue=ccw-plugin.hello-world/__greeter-handler=org.eclipse.e4.ui.model.application.commands.impl.HandlerImpl@539f015b (tags: [ccw], contributorURI: null) (contributionURI: bundleclass://ccw.core/clojure/ccw.e4.dsl/handler-factory/ccw-plugin.hello-world/__greeter-handler, object: null)}, AttName=handlers, EventType=ADD, Position=0, Widget=null, NewValue=ccw-plugin.hello-world/__greeter-handler=org.eclipse.e4.ui.model.application.commands.impl.HandlerImpl@539f015b (tags: [ccw], contributorURI: null) (contributionURI: bundleclass://ccw.core/clojure/ccw.e4.dsl/handler-factory/ccw-plugin.hello-world/__greeter-handler, object: null)} to handler org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler@356af560
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:91)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at clojure.lang.Reflector.invokeMatchingMethod(Reflector.java:93)
+	at clojure.lang.Reflector.invokeInstanceMethod(Reflector.java:28)
+	at ccw.e4.model$add_handler_BANG_.invoke(model.clj:654)
+	at ccw.e4.model$merge_handler_BANG_.invoke(model.clj:800)
+	at ccw_plugin.hello_world$eval127.invoke(hello-world.clj:5)
+	at clojure.lang.Compiler.eval(Compiler.java:6804)
+	at clojure.lang.Compiler.eval(Compiler.java:6794)
+	at clojure.lang.Compiler.eval(Compiler.java:6793)
+	at clojure.lang.Compiler.load(Compiler.java:7249)
+	at clojure.lang.Compiler.loadFile(Compiler.java:7187)
+	at clojure.lang.RT$3.invoke(RT.java:319)
+	at ccw.core.user_plugins$load_user_script.invoke(user_plugins.clj:110)
+	at ccw.core.user_plugins$start_user_plugin$fn__8948.invoke(user_plugins.clj:125)
+	at ccw.core.user_plugins$with_bundle$reify__8934.run(user_plugins.clj:89)
+	at ccw.util.osgi.ClojureOSGi.withBundle(ClojureOSGi.java:107)
+	at ccw.core.user_plugins$with_bundle.invoke(user_plugins.clj:86)
+	at ccw.core.user_plugins$start_user_plugin.invoke(user_plugins.clj:119)
+	at ccw.core.user_plugins$load_user_plugins.invoke(user_plugins.clj:163)
+	at ccw.core.user_plugins$start_user_plugins$fn__8984.invoke(user_plugins.clj:197)
+	at clojure.core$binding_conveyor_fn$fn__4444.invoke(core.clj:1916)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:145)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.handleHandlerEvent(HandlerProcessingAddon.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 44 more
+
+!ENTRY ccw.core 1 0 2019-09-01 03:59:40.882
+!MESSAGE Loaded User Script C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-hello-world\hello-world.clj
+
+!ENTRY ccw.core 1 0 2019-09-01 03:59:40.884
+!MESSAGE Loaded User Plugin: C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-hello-world
+
+!ENTRY ccw.core 1 0 2019-09-01 03:59:41.322
+!MESSAGE Loaded User Script C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-hyperlink\script.clj
+
+!ENTRY ccw.core 1 0 2019-09-01 03:59:41.323
+!MESSAGE Loaded User Plugin: C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-hyperlink
+
+!ENTRY org.eclipse.equinox.event 4 0 2019-09-01 03:59:41.435
+!MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/model/commands/HandlerContainer/handlers/ADD] {ChangedElement=org.eclipse.e4.legacy.ide.application=org.eclipse.e4.ui.model.application.impl.ApplicationImpl@31e7afde (tags: [activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration, ModelMigrationProcessor.001], contributorURI: platform:/plugin/org.eclipse.platform) (widget: null, renderer: null, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (context: WorkbenchContext, variables: null), org.eclipse.e4.data={ChangedElement=org.eclipse.e4.legacy.ide.application=org.eclipse.e4.ui.model.application.impl.ApplicationImpl@31e7afde (tags: [activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration, ModelMigrationProcessor.001], contributorURI: platform:/plugin/org.eclipse.platform) (widget: null, renderer: null, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (context: WorkbenchContext, variables: null), AttName=handlers, EventType=ADD, Position=0, Widget=null, NewValue=ccw-plugin-manager/__start-user-plugins-handler=org.eclipse.e4.ui.model.application.commands.impl.HandlerImpl@1af2a38 (tags: [ccw], contributorURI: null) (contributionURI: bundleclass://ccw.core/clojure/ccw.e4.dsl/handler-factory/ccw-plugin-manager/__start-user-plugins-handler, object: null)}, AttName=handlers, EventType=ADD, Position=0, Widget=null, NewValue=ccw-plugin-manager/__start-user-plugins-handler=org.eclipse.e4.ui.model.application.commands.impl.HandlerImpl@1af2a38 (tags: [ccw], contributorURI: null) (contributionURI: bundleclass://ccw.core/clojure/ccw.e4.dsl/handler-factory/ccw-plugin-manager/__start-user-plugins-handler, object: null)} to handler org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler@356af560
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:91)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at clojure.lang.Reflector.invokeMatchingMethod(Reflector.java:93)
+	at clojure.lang.Reflector.invokeInstanceMethod(Reflector.java:28)
+	at ccw.e4.model$add_handler_BANG_.invoke(model.clj:654)
+	at ccw.e4.model$merge_handler_BANG_.invoke(model.clj:800)
+	at ccw_plugin_manager$eval181.invoke(ccw-plugin-manager.clj:28)
+	at clojure.lang.Compiler.eval(Compiler.java:6804)
+	at clojure.lang.Compiler.eval(Compiler.java:6794)
+	at clojure.lang.Compiler.eval(Compiler.java:6793)
+	at clojure.lang.Compiler.load(Compiler.java:7249)
+	at clojure.lang.Compiler.loadFile(Compiler.java:7187)
+	at clojure.lang.RT$3.invoke(RT.java:319)
+	at ccw.core.user_plugins$load_user_script.invoke(user_plugins.clj:110)
+	at ccw.core.user_plugins$start_user_plugin$fn__8948.invoke(user_plugins.clj:125)
+	at ccw.core.user_plugins$with_bundle$reify__8934.run(user_plugins.clj:89)
+	at ccw.util.osgi.ClojureOSGi.withBundle(ClojureOSGi.java:107)
+	at ccw.core.user_plugins$with_bundle.invoke(user_plugins.clj:86)
+	at ccw.core.user_plugins$start_user_plugin.invoke(user_plugins.clj:119)
+	at ccw.core.user_plugins$load_user_plugins.invoke(user_plugins.clj:163)
+	at ccw.core.user_plugins$start_user_plugins$fn__8984.invoke(user_plugins.clj:197)
+	at clojure.core$binding_conveyor_fn$fn__4444.invoke(core.clj:1916)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:145)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.handleHandlerEvent(HandlerProcessingAddon.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 44 more
+
+!ENTRY org.eclipse.equinox.event 4 0 2019-09-01 03:59:41.508
+!MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/model/commands/HandlerContainer/handlers/ADD] {ChangedElement=org.eclipse.e4.legacy.ide.application=org.eclipse.e4.ui.model.application.impl.ApplicationImpl@31e7afde (tags: [activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration, ModelMigrationProcessor.001], contributorURI: platform:/plugin/org.eclipse.platform) (widget: null, renderer: null, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (context: WorkbenchContext, variables: null), org.eclipse.e4.data={ChangedElement=org.eclipse.e4.legacy.ide.application=org.eclipse.e4.ui.model.application.impl.ApplicationImpl@31e7afde (tags: [activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration, ModelMigrationProcessor.001], contributorURI: platform:/plugin/org.eclipse.platform) (widget: null, renderer: null, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (context: WorkbenchContext, variables: null), AttName=handlers, EventType=ADD, Position=0, Widget=null, NewValue=ccw-plugin-manager/__create-user-plugin-cmd-handler=org.eclipse.e4.ui.model.application.commands.impl.HandlerImpl@247ed450 (tags: [ccw], contributorURI: null) (contributionURI: bundleclass://ccw.core/clojure/ccw.e4.dsl/handler-factory/ccw-plugin-manager/__create-user-plugin-cmd-handler, object: null)}, AttName=handlers, EventType=ADD, Position=0, Widget=null, NewValue=ccw-plugin-manager/__create-user-plugin-cmd-handler=org.eclipse.e4.ui.model.application.commands.impl.HandlerImpl@247ed450 (tags: [ccw], contributorURI: null) (contributionURI: bundleclass://ccw.core/clojure/ccw.e4.dsl/handler-factory/ccw-plugin-manager/__create-user-plugin-cmd-handler, object: null)} to handler org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler@356af560
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:91)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at clojure.lang.Reflector.invokeMatchingMethod(Reflector.java:93)
+	at clojure.lang.Reflector.invokeInstanceMethod(Reflector.java:28)
+	at ccw.e4.model$add_handler_BANG_.invoke(model.clj:654)
+	at ccw.e4.model$merge_handler_BANG_.invoke(model.clj:800)
+	at ccw_plugin_manager$eval211.invoke(ccw-plugin-manager.clj:72)
+	at clojure.lang.Compiler.eval(Compiler.java:6804)
+	at clojure.lang.Compiler.eval(Compiler.java:6794)
+	at clojure.lang.Compiler.eval(Compiler.java:6793)
+	at clojure.lang.Compiler.load(Compiler.java:7249)
+	at clojure.lang.Compiler.loadFile(Compiler.java:7187)
+	at clojure.lang.RT$3.invoke(RT.java:319)
+	at ccw.core.user_plugins$load_user_script.invoke(user_plugins.clj:110)
+	at ccw.core.user_plugins$start_user_plugin$fn__8948.invoke(user_plugins.clj:125)
+	at ccw.core.user_plugins$with_bundle$reify__8934.run(user_plugins.clj:89)
+	at ccw.util.osgi.ClojureOSGi.withBundle(ClojureOSGi.java:107)
+	at ccw.core.user_plugins$with_bundle.invoke(user_plugins.clj:86)
+	at ccw.core.user_plugins$start_user_plugin.invoke(user_plugins.clj:119)
+	at ccw.core.user_plugins$load_user_plugins.invoke(user_plugins.clj:163)
+	at ccw.core.user_plugins$start_user_plugins$fn__8984.invoke(user_plugins.clj:197)
+	at clojure.core$binding_conveyor_fn$fn__4444.invoke(core.clj:1916)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:145)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.handleHandlerEvent(HandlerProcessingAddon.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 44 more
+
+!ENTRY org.eclipse.equinox.event 4 0 2019-09-01 03:59:41.558
+!MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/model/commands/HandlerContainer/handlers/ADD] {ChangedElement=org.eclipse.e4.legacy.ide.application=org.eclipse.e4.ui.model.application.impl.ApplicationImpl@31e7afde (tags: [activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration, ModelMigrationProcessor.001], contributorURI: platform:/plugin/org.eclipse.platform) (widget: null, renderer: null, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (context: WorkbenchContext, variables: null), org.eclipse.e4.data={ChangedElement=org.eclipse.e4.legacy.ide.application=org.eclipse.e4.ui.model.application.impl.ApplicationImpl@31e7afde (tags: [activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration, ModelMigrationProcessor.001], contributorURI: platform:/plugin/org.eclipse.platform) (widget: null, renderer: null, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (context: WorkbenchContext, variables: null), AttName=handlers, EventType=ADD, Position=0, Widget=null, NewValue=ccw-plugin-manager/__create-user-plugins-projects-handler=org.eclipse.e4.ui.model.application.commands.impl.HandlerImpl@6833dafd (tags: [ccw], contributorURI: null) (contributionURI: bundleclass://ccw.core/clojure/ccw.e4.dsl/handler-factory/ccw-plugin-manager/__create-user-plugins-projects-handler, object: null)}, AttName=handlers, EventType=ADD, Position=0, Widget=null, NewValue=ccw-plugin-manager/__create-user-plugins-projects-handler=org.eclipse.e4.ui.model.application.commands.impl.HandlerImpl@6833dafd (tags: [ccw], contributorURI: null) (contributionURI: bundleclass://ccw.core/clojure/ccw.e4.dsl/handler-factory/ccw-plugin-manager/__create-user-plugins-projects-handler, object: null)} to handler org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler@356af560
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:91)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at clojure.lang.Reflector.invokeMatchingMethod(Reflector.java:93)
+	at clojure.lang.Reflector.invokeInstanceMethod(Reflector.java:28)
+	at ccw.e4.model$add_handler_BANG_.invoke(model.clj:654)
+	at ccw.e4.model$merge_handler_BANG_.invoke(model.clj:800)
+	at ccw_plugin_manager$eval233.invoke(ccw-plugin-manager.clj:92)
+	at clojure.lang.Compiler.eval(Compiler.java:6804)
+	at clojure.lang.Compiler.eval(Compiler.java:6794)
+	at clojure.lang.Compiler.eval(Compiler.java:6793)
+	at clojure.lang.Compiler.load(Compiler.java:7249)
+	at clojure.lang.Compiler.loadFile(Compiler.java:7187)
+	at clojure.lang.RT$3.invoke(RT.java:319)
+	at ccw.core.user_plugins$load_user_script.invoke(user_plugins.clj:110)
+	at ccw.core.user_plugins$start_user_plugin$fn__8948.invoke(user_plugins.clj:125)
+	at ccw.core.user_plugins$with_bundle$reify__8934.run(user_plugins.clj:89)
+	at ccw.util.osgi.ClojureOSGi.withBundle(ClojureOSGi.java:107)
+	at ccw.core.user_plugins$with_bundle.invoke(user_plugins.clj:86)
+	at ccw.core.user_plugins$start_user_plugin.invoke(user_plugins.clj:119)
+	at ccw.core.user_plugins$load_user_plugins.invoke(user_plugins.clj:163)
+	at ccw.core.user_plugins$start_user_plugins$fn__8984.invoke(user_plugins.clj:197)
+	at clojure.core$binding_conveyor_fn$fn__4444.invoke(core.clj:1916)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:145)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.handleHandlerEvent(HandlerProcessingAddon.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 44 more
+
+!ENTRY ccw.core 1 0 2019-09-01 03:59:41.568
+!MESSAGE Loaded User Script C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-manager\ccw-plugin-manager.clj
+
+!ENTRY ccw.core 1 0 2019-09-01 03:59:41.569
+!MESSAGE Loaded User Plugin: C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-manager
+
+!ENTRY org.eclipse.equinox.event 4 0 2019-09-01 03:59:41.992
+!MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/model/commands/HandlerContainer/handlers/ADD] {ChangedElement=org.eclipse.e4.legacy.ide.application=org.eclipse.e4.ui.model.application.impl.ApplicationImpl@31e7afde (tags: [activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration, ModelMigrationProcessor.001], contributorURI: platform:/plugin/org.eclipse.platform) (widget: null, renderer: null, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (context: WorkbenchContext, variables: null), org.eclipse.e4.data={ChangedElement=org.eclipse.e4.legacy.ide.application=org.eclipse.e4.ui.model.application.impl.ApplicationImpl@31e7afde (tags: [activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration, ModelMigrationProcessor.001], contributorURI: platform:/plugin/org.eclipse.platform) (widget: null, renderer: null, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (context: WorkbenchContext, variables: null), AttName=handlers, EventType=ADD, Position=0, Widget=null, NewValue=ccw-plugin-zoom/__zoom-in-handler=org.eclipse.e4.ui.model.application.commands.impl.HandlerImpl@31efbaa9 (tags: [ccw], contributorURI: null) (contributionURI: bundleclass://ccw.core/clojure/ccw.e4.dsl/handler-factory/ccw-plugin-zoom/__zoom-in-handler, object: null)}, AttName=handlers, EventType=ADD, Position=0, Widget=null, NewValue=ccw-plugin-zoom/__zoom-in-handler=org.eclipse.e4.ui.model.application.commands.impl.HandlerImpl@31efbaa9 (tags: [ccw], contributorURI: null) (contributionURI: bundleclass://ccw.core/clojure/ccw.e4.dsl/handler-factory/ccw-plugin-zoom/__zoom-in-handler, object: null)} to handler org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler@356af560
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:91)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+	at sun.reflect.GeneratedMethodAccessor44.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at clojure.lang.Reflector.invokeMatchingMethod(Reflector.java:93)
+	at clojure.lang.Reflector.invokeInstanceMethod(Reflector.java:28)
+	at ccw.e4.model$add_handler_BANG_.invoke(model.clj:654)
+	at ccw.e4.model$merge_handler_BANG_.invoke(model.clj:800)
+	at ccw_plugin_zoom$eval266.invoke(ccw-plugin-zoom.clj:75)
+	at clojure.lang.Compiler.eval(Compiler.java:6804)
+	at clojure.lang.Compiler.eval(Compiler.java:6794)
+	at clojure.lang.Compiler.load(Compiler.java:7249)
+	at clojure.lang.Compiler.loadFile(Compiler.java:7187)
+	at clojure.lang.RT$3.invoke(RT.java:319)
+	at ccw.core.user_plugins$load_user_script.invoke(user_plugins.clj:110)
+	at ccw.core.user_plugins$start_user_plugin$fn__8948.invoke(user_plugins.clj:125)
+	at ccw.core.user_plugins$with_bundle$reify__8934.run(user_plugins.clj:89)
+	at ccw.util.osgi.ClojureOSGi.withBundle(ClojureOSGi.java:107)
+	at ccw.core.user_plugins$with_bundle.invoke(user_plugins.clj:86)
+	at ccw.core.user_plugins$start_user_plugin.invoke(user_plugins.clj:119)
+	at ccw.core.user_plugins$load_user_plugins.invoke(user_plugins.clj:163)
+	at ccw.core.user_plugins$start_user_plugins$fn__8984.invoke(user_plugins.clj:197)
+	at clojure.core$binding_conveyor_fn$fn__4444.invoke(core.clj:1916)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:145)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.handleHandlerEvent(HandlerProcessingAddon.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 42 more
+
+!ENTRY org.eclipse.equinox.event 4 0 2019-09-01 03:59:42.097
+!MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/model/commands/HandlerContainer/handlers/ADD] {ChangedElement=org.eclipse.e4.legacy.ide.application=org.eclipse.e4.ui.model.application.impl.ApplicationImpl@31e7afde (tags: [activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration, ModelMigrationProcessor.001], contributorURI: platform:/plugin/org.eclipse.platform) (widget: null, renderer: null, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (context: WorkbenchContext, variables: null), org.eclipse.e4.data={ChangedElement=org.eclipse.e4.legacy.ide.application=org.eclipse.e4.ui.model.application.impl.ApplicationImpl@31e7afde (tags: [activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration, ModelMigrationProcessor.001], contributorURI: platform:/plugin/org.eclipse.platform) (widget: null, renderer: null, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (context: WorkbenchContext, variables: null), AttName=handlers, EventType=ADD, Position=0, Widget=null, NewValue=ccw-plugin-zoom/__zoom-out-handler=org.eclipse.e4.ui.model.application.commands.impl.HandlerImpl@5ec84cc9 (tags: [ccw], contributorURI: null) (contributionURI: bundleclass://ccw.core/clojure/ccw.e4.dsl/handler-factory/ccw-plugin-zoom/__zoom-out-handler, object: null)}, AttName=handlers, EventType=ADD, Position=0, Widget=null, NewValue=ccw-plugin-zoom/__zoom-out-handler=org.eclipse.e4.ui.model.application.commands.impl.HandlerImpl@5ec84cc9 (tags: [ccw], contributorURI: null) (contributionURI: bundleclass://ccw.core/clojure/ccw.e4.dsl/handler-factory/ccw-plugin-zoom/__zoom-out-handler, object: null)} to handler org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler@356af560
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:91)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+	at sun.reflect.GeneratedMethodAccessor44.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at clojure.lang.Reflector.invokeMatchingMethod(Reflector.java:93)
+	at clojure.lang.Reflector.invokeInstanceMethod(Reflector.java:28)
+	at ccw.e4.model$add_handler_BANG_.invoke(model.clj:654)
+	at ccw.e4.model$merge_handler_BANG_.invoke(model.clj:800)
+	at ccw_plugin_zoom$eval285.invoke(ccw-plugin-zoom.clj:82)
+	at clojure.lang.Compiler.eval(Compiler.java:6804)
+	at clojure.lang.Compiler.eval(Compiler.java:6794)
+	at clojure.lang.Compiler.load(Compiler.java:7249)
+	at clojure.lang.Compiler.loadFile(Compiler.java:7187)
+	at clojure.lang.RT$3.invoke(RT.java:319)
+	at ccw.core.user_plugins$load_user_script.invoke(user_plugins.clj:110)
+	at ccw.core.user_plugins$start_user_plugin$fn__8948.invoke(user_plugins.clj:125)
+	at ccw.core.user_plugins$with_bundle$reify__8934.run(user_plugins.clj:89)
+	at ccw.util.osgi.ClojureOSGi.withBundle(ClojureOSGi.java:107)
+	at ccw.core.user_plugins$with_bundle.invoke(user_plugins.clj:86)
+	at ccw.core.user_plugins$start_user_plugin.invoke(user_plugins.clj:119)
+	at ccw.core.user_plugins$load_user_plugins.invoke(user_plugins.clj:163)
+	at ccw.core.user_plugins$start_user_plugins$fn__8984.invoke(user_plugins.clj:197)
+	at clojure.core$binding_conveyor_fn$fn__4444.invoke(core.clj:1916)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:145)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.handleHandlerEvent(HandlerProcessingAddon.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 42 more
+
+!ENTRY ccw.core 1 0 2019-09-01 03:59:42.113
+!MESSAGE Loaded User Script C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-zoom\ccw-plugin-zoom.clj
+
+!ENTRY ccw.core 1 0 2019-09-01 03:59:42.113
+!MESSAGE Loaded User Plugin: C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-zoom
+
+!ENTRY ccw.core 1 0 2019-09-01 03:59:42.114
+!MESSAGE Loaded User Plugins
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:00:31.867
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:00:31.868
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@5d7d2cb5[org.springframework.tooling.boot.ls:1.7.0.201905231938(id=1006)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:00:31.870
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:00:32.452
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:00:36.998
+!MESSAGE Boot LS startup time from start to initialized: 5117ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:00:37.119
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.saZChEbO
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:00:37.119
+!MESSAGE subscribing to classpath changes: sts4.classpath.saZChEbO
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:00:37.121
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:00:37.122
+!MESSAGE subsribers = [sts4.classpath.saZChEbO]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:00:37.123
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:00:37.429
+!MESSAGE project FeedBackIsepBack ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:00:37.431
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:00:37.431
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.saZChEbO => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:00:37.436
+!MESSAGE Preparing classpath changed notification FeedBackIsepBack
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:00:37.437
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:00:37.450
+!MESSAGE classpath=86 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:00:37.451
+!MESSAGE executing callback sts4.classpath.saZChEbO FeedBackIsepBack false 86
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:00:37.575
+!MESSAGE executing callback sts4.classpath.saZChEbO SUCCESS [done]
+
+!ENTRY org.eclipse.wst.xml.core 4 4 2019-09-01 04:00:50.628
+!MESSAGE null
+!STACK 0
+java.lang.NullPointerException
+	at java.io.File.<init>(Unknown Source)
+	at org.eclipse.wst.xml.core.internal.catalog.CatalogWriter.getOutputStream(CatalogWriter.java:350)
+	at org.eclipse.wst.xml.core.internal.catalog.CatalogWriter.write(CatalogWriter.java:56)
+	at org.eclipse.wst.xml.core.internal.catalog.Catalog$CatalogLS.save(Catalog.java:56)
+	at org.eclipse.wst.xml.core.internal.catalog.Catalog$DefaultCatalogLS.load(Catalog.java:83)
+	at org.eclipse.wst.xml.core.internal.catalog.Catalog.load(Catalog.java:656)
+	at org.eclipse.wst.xml.core.internal.catalog.CatalogSet.lookupOrCreateCatalog(CatalogSet.java:43)
+	at org.eclipse.wst.xml.core.internal.XMLCorePlugin.getDefaultXMLCatalog(XMLCorePlugin.java:79)
+	at org.eclipse.wst.xml.core.internal.catalog.XMLCatalogURIResolverExtension.resolve(XMLCatalogURIResolverExtension.java:37)
+	at org.eclipse.wst.common.uriresolver.internal.ExtensibleURIResolver.resolve(ExtensibleURIResolver.java:86)
+	at org.eclipse.wst.xml.core.internal.modelquery.XMLCatalogIdResolver.resolve(XMLCatalogIdResolver.java:94)
+	at org.eclipse.wst.xml.core.internal.modelquery.XMLModelQueryAssociationProvider.resolveGrammarURI(XMLModelQueryAssociationProvider.java:60)
+	at org.eclipse.wst.xml.core.internal.contentmodel.modelqueryimpl.XMLAssociationProvider.resolveGrammarURI(XMLAssociationProvider.java:170)
+	at org.eclipse.wst.xml.core.internal.contentmodel.modelqueryimpl.CMDocumentManagerImpl.lookupOrCreateResolvedURI(CMDocumentManagerImpl.java:124)
+	at org.eclipse.wst.xml.core.internal.contentmodel.modelqueryimpl.CMDocumentManagerImpl.addCMDocumentReference(CMDocumentManagerImpl.java:206)
+	at org.eclipse.wst.xml.core.internal.contentmodel.modelqueryimpl.CMDocumentLoader.handleGrammar(CMDocumentLoader.java:226)
+	at org.eclipse.wst.xml.core.internal.contentmodel.modelqueryimpl.CMDocumentLoader$CMDocumentLoadingNamespaceTable.addElement(CMDocumentLoader.java:301)
+	at org.eclipse.wst.xml.core.internal.contentmodel.modelqueryimpl.CMDocumentLoader.loadCMDocuments(CMDocumentLoader.java:131)
+	at org.eclipse.wst.xml.core.internal.contentmodel.modelqueryimpl.InferredGrammarBuildingCMDocumentLoader.loadCMDocuments(InferredGrammarBuildingCMDocumentLoader.java:58)
+	at org.eclipse.wst.xml.ui.internal.DOMObserver.invokeCMDocumentLoad(DOMObserver.java:216)
+	at org.eclipse.wst.xml.ui.internal.DOMObserver$TimerJob.run(DOMObserver.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY ccw.core 1 0 2019-09-01 04:01:06.674
+!MESSAGE removed from launchNameREPLURLPromiseAndWithREPLView the key Executing clean in C__Users_Utilisateur_git_FeedBackIsep_FeedBackIsepBack
+
+!ENTRY ccw.core 1 0 2019-09-01 04:01:27.594
+!MESSAGE removed from launchNameREPLURLPromiseAndWithREPLView the key Executing install in C__Users_Utilisateur_git_FeedBackIsep_FeedBackIsepBack
+
+!ENTRY org.eclipse.ui 2 2 2019-09-01 04:01:50.520
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:03:42.327
+!MESSAGE Preparing classpath changed notification FeedBackIsepBack
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:03:42.328
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:03:42.336
+!MESSAGE classpath=86 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:03:42.337
+!MESSAGE executing callback sts4.classpath.saZChEbO FeedBackIsepBack false 86
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:03:42.448
+!MESSAGE executing callback sts4.classpath.saZChEbO SUCCESS [done]
+
+!ENTRY ccw.core 1 0 2019-09-01 04:04:55.888
+!MESSAGE removed from launchNameREPLURLPromiseAndWithREPLView the key Executing install in C__Users_Utilisateur_git_FeedBackIsep_FeedBackIsepBack
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-01 04:05:02.064
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:105)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-01 04:05:18.099
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:105)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-01 04:05:55.728
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:105)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-01 04:06:32.989
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:105)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-01 04:06:45.110
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:105)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-01 04:07:45.165
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:105)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-01 04:08:00.650
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:105)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-01 04:09:21.824
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:105)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-01 04:10:07.333
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:105)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-01 04:10:59.100
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:105)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-01 04:11:24.017
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:105)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-01 04:16:18.827
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:105)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-01 04:19:23.901
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:105)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.jface.text 2 0 2019-09-01 04:33:51.718
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY ccw.core 1 0 2019-09-01 04:36:28.904
+!MESSAGE removed from launchNameREPLURLPromiseAndWithREPLView the key FeedBackIsepBack - Swagger2SpringBoot
+
+!ENTRY ccw.core 1 0 2019-09-01 04:36:53.062
+!MESSAGE removed from launchNameREPLURLPromiseAndWithREPLView the key FeedBackIsepBack - Swagger2SpringBoot
+
+!ENTRY ccw.core 1 0 2019-09-01 04:37:38.160
+!MESSAGE removed from launchNameREPLURLPromiseAndWithREPLView the key FeedBackIsepBack - Swagger2SpringBoot
+
+!ENTRY ccw.core 1 0 2019-09-01 04:37:55.759
+!MESSAGE removed from launchNameREPLURLPromiseAndWithREPLView the key FeedBackIsepBack - Swagger2SpringBoot
+
+!ENTRY ccw.core 1 0 2019-09-01 04:39:24.945
+!MESSAGE removed from launchNameREPLURLPromiseAndWithREPLView the key FeedBackIsepBack - Swagger2SpringBoot
+
+!ENTRY ccw.core 1 0 2019-09-01 04:39:26.818
+!MESSAGE removed from launchNameREPLURLPromiseAndWithREPLView the key FeedBackIsepBack - Swagger2SpringBoot
+
+!ENTRY ccw.core 1 0 2019-09-01 04:40:29.432
+!MESSAGE removed from launchNameREPLURLPromiseAndWithREPLView the key FeedBackIsepBack - Swagger2SpringBoot
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:46:19.352
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.saZChEbO
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:46:19.353
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.saZChEbO
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:46:19.354
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:46:19.355
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.saZChEbO => OK
+
+!ENTRY ccw.core 1 0 2019-09-01 04:46:20.655
+!MESSAGE Stopping ccw nREPL server...
+!SESSION 2019-09-01 04:47:54.179 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=1.8.0_211
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ccw.core 1 0 2019-09-01 04:48:00.556
+!MESSAGE CCWPlugin.start(): ENTER
+
+!ENTRY ccw.core 1 0 2019-09-01 04:48:02.706
+!MESSAGE Counterclockwise dependencies:
+        [bultitude "0.2.1"]
+        [ccw/ccw.server "0.2.1"]
+        [ccw/clojure-ccw "1.7.0"]
+        [cheshire "5.0.2"]
+        [classlojure "0.6.6"]
+        [clj-http "0.9.2"]
+        [clj-stacktrace "0.2.7"]
+        [clj-tuple "0.1.2"]
+        [clojure-complete "0.2.3"]
+        [com.cemerick/drawbridge "0.0.6"]
+        [com.cemerick/pomegranate "0.3.0"]
+        [com.fasterxml.jackson.core/jackson-core "2.1.3"]
+        [com.fasterxml.jackson.dataformat/jackson-dataformat-smile "2.1.2"]
+        [com.hypirion/io "0.3.1"]
+        [commons-codec "1.9"]
+        [commons-fileupload "1.2.1"]
+        [commons-io "2.4"]
+        [commons-lang "2.6"]
+        [commons-logging "1.1.3"]
+        [dynapath "0.2.0"]
+        [jline "2.12"]
+        [leiningen "2.5.1"]
+        [leiningen-core "2.5.1"]
+        [net.cgrand/parsley "0.9.2"]
+        [net.cgrand/regex "1.1.0"]
+        [net.cgrand/sjacket "0.1.1"]
+        [net.mikera/cljunit "0.2.0"]
+        [org.apache.httpcomponents/httpclient "4.3.3"]
+        [org.apache.httpcomponents/httpcore "4.3.2"]
+        [org.apache.httpcomponents/httpmime "4.3.3"]
+        [org.apache.maven/maven-aether-provider "3.0.4"]
+        [org.apache.maven/maven-model "3.0.4"]
+        [org.apache.maven/maven-model-builder "3.0.4"]
+        [org.apache.maven/maven-repository-metadata "3.0.4"]
+        [org.apache.maven.indexer/indexer-artifact "4.1.3"]
+        [org.apache.maven.indexer/indexer-core "4.1.3"]
+        [org.apache.maven.wagon/wagon-http "2.7"]
+        [org.apache.maven.wagon/wagon-http-shared "2.7"]
+        [org.apache.maven.wagon/wagon-provider-api "2.2"]
+        [org.clojure/clojure-contrib "1.2.0"]
+        [org.clojure/core.incubator "0.1.0"]
+        [org.clojure/data.xml "0.0.3"]
+        [org.clojure/java.classpath "0.2.2"]
+        [org.clojure/java.data "0.1.1"]
+        [org.clojure/tools.cli "0.3.1"]
+        [org.clojure/tools.logging "0.2.3"]
+        [org.clojure/tools.macro "0.1.1"]
+        [org.clojure/tools.nrepl "0.2.10"]
+        [org.clojure/tools.reader "0.8.4"]
+        [org.codehaus.plexus/plexus-classworlds "2.4"]
+        [org.codehaus.plexus/plexus-component-annotations "1.5.5"]
+        [org.codehaus.plexus/plexus-interpolation "1.14"]
+        [org.codehaus.plexus/plexus-utils "2.0.6"]
+        [org.jsoup/jsoup "1.7.2"]
+        [org.sonatype.aether/aether-api "1.13.1"]
+        [org.sonatype.aether/aether-connector-file "1.13.1"]
+        [org.sonatype.aether/aether-connector-wagon "1.13.1"]
+        [org.sonatype.aether/aether-impl "1.13.1"]
+        [org.sonatype.aether/aether-spi "1.13.1"]
+        [org.sonatype.aether/aether-util "1.13.1"]
+        [org.sonatype.sisu/sisu-inject-bean "2.2.3"]
+        [org.sonatype.sisu/sisu-inject-plexus "2.2.3"]
+        [org.tcrawley/dynapath "0.2.3"]
+        [pedantic "0.2.0"]
+        [potemkin "0.3.4"]
+        [prismatic/schema "0.4.4"]
+        [quoin "0.1.2"]
+        [reply "0.3.5"]
+        [riddley "0.1.6"]
+        [ring/ring-core "1.0.2"]
+        [robert/hooke "1.3.0"]
+        [scout "0.1.0"]
+        [slingshot "0.10.3"]
+        [stencil "0.3.5"]
+        [trptcolin/versioneer "0.1.1"]
+
+!ENTRY ccw.core 1 0 2019-09-01 04:48:10.154
+!MESSAGE CCWPlugin.start(): EXIT
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-09-01 04:48:10.254
+!MESSAGE Unable to create class 'org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon' from bundle '272'
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1001)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:411)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:347)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:227)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:94)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:289)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:589)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:145)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 26 more
+
+!ENTRY org.eclipse.egit.core 1 0 2019-09-01 04:48:11.119
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-09-01 04:48:12.664
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-09-01 04:48:12.664
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1013aa94,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(pl.szpinda.plugin.tomcat.commands.tomcatStartStop,Tomcat start,stop,
+		,
+		Category(pl.szpinda.plugin.tomcat.commands.category.key,Tomcat keys,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@36bd07ec,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-09-01 04:48:12.664
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@85b9f9c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@26a004ed,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jface.text 2 0 2019-09-01 04:48:18.998
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:48:31.239
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:48:31.243
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@401e36ab[org.springframework.tooling.boot.ls:1.7.0.201905231938(id=1006)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:48:31.350
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:48:31.578
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-09-01 04:48:34.081
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Utilisateur'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY ccw.core 1 0 2019-09-01 04:48:37.309
+!MESSAGE Loaded User Script C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-ansi-repl\ansi-repl.clj
+
+!ENTRY ccw.core 1 0 2019-09-01 04:48:37.311
+!MESSAGE Loaded User Plugin: C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-ansi-repl
+
+!ENTRY ccw.core 1 0 2019-09-01 04:48:37.455
+!MESSAGE Loaded User Script C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-hello-world\hello-world.clj
+
+!ENTRY ccw.core 1 0 2019-09-01 04:48:37.456
+!MESSAGE Loaded User Plugin: C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-hello-world
+
+!ENTRY ccw.core 1 0 2019-09-01 04:48:38.210
+!MESSAGE Loaded User Script C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-hyperlink\script.clj
+
+!ENTRY ccw.core 1 0 2019-09-01 04:48:38.232
+!MESSAGE Loaded User Plugin: C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-hyperlink
+
+!ENTRY ccw.core 1 0 2019-09-01 04:48:38.491
+!MESSAGE Loaded User Script C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-manager\ccw-plugin-manager.clj
+
+!ENTRY ccw.core 1 0 2019-09-01 04:48:38.492
+!MESSAGE Loaded User Plugin: C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-manager
+
+!ENTRY ccw.core 1 0 2019-09-01 04:48:38.932
+!MESSAGE Loaded User Script C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-zoom\ccw-plugin-zoom.clj
+
+!ENTRY ccw.core 1 0 2019-09-01 04:48:38.957
+!MESSAGE Loaded User Plugin: C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-zoom
+
+!ENTRY ccw.core 1 0 2019-09-01 04:48:38.958
+!MESSAGE Loaded User Plugins
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:48:41.665
+!MESSAGE Boot LS startup time from start to initialized: 10294ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:48:41.803
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.itEmphAe
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:48:41.804
+!MESSAGE subscribing to classpath changes: sts4.classpath.itEmphAe
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:48:41.806
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:48:41.807
+!MESSAGE subsribers = [sts4.classpath.itEmphAe]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:48:41.808
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:48:41.958
+!MESSAGE project FeedBackIsepBack ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:48:41.963
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:48:42.002
+!MESSAGE Preparing classpath changed notification FeedBackIsepBack
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:48:42.003
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:48:42.048
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.itEmphAe => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:48:42.073
+!MESSAGE classpath=86 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:48:42.076
+!MESSAGE executing callback sts4.classpath.itEmphAe FeedBackIsepBack false 86
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:48:42.148
+!MESSAGE executing callback sts4.classpath.itEmphAe SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-01 04:50:08.987
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:105)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY ccw.core 1 0 2019-09-01 04:57:04.750
+!MESSAGE removed from launchNameREPLURLPromiseAndWithREPLView the key FeedBackIsepBack - Swagger2SpringBoot
+
+!ENTRY ccw.core 1 0 2019-09-01 04:57:18.787
+!MESSAGE removed from launchNameREPLURLPromiseAndWithREPLView the key FeedBackIsepBack - Swagger2SpringBoot
+
+!ENTRY ccw.core 1 0 2019-09-01 04:57:20.243
+!MESSAGE removed from launchNameREPLURLPromiseAndWithREPLView the key FeedBackIsepBack - Swagger2SpringBoot
+
+!ENTRY ccw.core 1 0 2019-09-01 04:57:22.199
+!MESSAGE removed from launchNameREPLURLPromiseAndWithREPLView the key FeedBackIsepBack - Swagger2SpringBoot
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:59:00.305
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.itEmphAe
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:59:00.306
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.itEmphAe
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:59:00.306
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-01 04:59:00.307
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.itEmphAe => OK
+
+!ENTRY org.eclipse.ui 2 2 2019-09-01 04:59:01.020
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY ccw.core 1 0 2019-09-01 04:59:01.643
+!MESSAGE Stopping ccw nREPL server...
+!SESSION 2019-09-02 08:22:31.376 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=1.8.0_211
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ccw.core 1 0 2019-09-02 08:22:40.086
+!MESSAGE CCWPlugin.start(): ENTER
+
+!ENTRY ccw.core 1 0 2019-09-02 08:22:42.505
+!MESSAGE Counterclockwise dependencies:
+        [bultitude "0.2.1"]
+        [ccw/ccw.server "0.2.1"]
+        [ccw/clojure-ccw "1.7.0"]
+        [cheshire "5.0.2"]
+        [classlojure "0.6.6"]
+        [clj-http "0.9.2"]
+        [clj-stacktrace "0.2.7"]
+        [clj-tuple "0.1.2"]
+        [clojure-complete "0.2.3"]
+        [com.cemerick/drawbridge "0.0.6"]
+        [com.cemerick/pomegranate "0.3.0"]
+        [com.fasterxml.jackson.core/jackson-core "2.1.3"]
+        [com.fasterxml.jackson.dataformat/jackson-dataformat-smile "2.1.2"]
+        [com.hypirion/io "0.3.1"]
+        [commons-codec "1.9"]
+        [commons-fileupload "1.2.1"]
+        [commons-io "2.4"]
+        [commons-lang "2.6"]
+        [commons-logging "1.1.3"]
+        [dynapath "0.2.0"]
+        [jline "2.12"]
+        [leiningen "2.5.1"]
+        [leiningen-core "2.5.1"]
+        [net.cgrand/parsley "0.9.2"]
+        [net.cgrand/regex "1.1.0"]
+        [net.cgrand/sjacket "0.1.1"]
+        [net.mikera/cljunit "0.2.0"]
+        [org.apache.httpcomponents/httpclient "4.3.3"]
+        [org.apache.httpcomponents/httpcore "4.3.2"]
+        [org.apache.httpcomponents/httpmime "4.3.3"]
+        [org.apache.maven/maven-aether-provider "3.0.4"]
+        [org.apache.maven/maven-model "3.0.4"]
+        [org.apache.maven/maven-model-builder "3.0.4"]
+        [org.apache.maven/maven-repository-metadata "3.0.4"]
+        [org.apache.maven.indexer/indexer-artifact "4.1.3"]
+        [org.apache.maven.indexer/indexer-core "4.1.3"]
+        [org.apache.maven.wagon/wagon-http "2.7"]
+        [org.apache.maven.wagon/wagon-http-shared "2.7"]
+        [org.apache.maven.wagon/wagon-provider-api "2.2"]
+        [org.clojure/clojure-contrib "1.2.0"]
+        [org.clojure/core.incubator "0.1.0"]
+        [org.clojure/data.xml "0.0.3"]
+        [org.clojure/java.classpath "0.2.2"]
+        [org.clojure/java.data "0.1.1"]
+        [org.clojure/tools.cli "0.3.1"]
+        [org.clojure/tools.logging "0.2.3"]
+        [org.clojure/tools.macro "0.1.1"]
+        [org.clojure/tools.nrepl "0.2.10"]
+        [org.clojure/tools.reader "0.8.4"]
+        [org.codehaus.plexus/plexus-classworlds "2.4"]
+        [org.codehaus.plexus/plexus-component-annotations "1.5.5"]
+        [org.codehaus.plexus/plexus-interpolation "1.14"]
+        [org.codehaus.plexus/plexus-utils "2.0.6"]
+        [org.jsoup/jsoup "1.7.2"]
+        [org.sonatype.aether/aether-api "1.13.1"]
+        [org.sonatype.aether/aether-connector-file "1.13.1"]
+        [org.sonatype.aether/aether-connector-wagon "1.13.1"]
+        [org.sonatype.aether/aether-impl "1.13.1"]
+        [org.sonatype.aether/aether-spi "1.13.1"]
+        [org.sonatype.aether/aether-util "1.13.1"]
+        [org.sonatype.sisu/sisu-inject-bean "2.2.3"]
+        [org.sonatype.sisu/sisu-inject-plexus "2.2.3"]
+        [org.tcrawley/dynapath "0.2.3"]
+        [pedantic "0.2.0"]
+        [potemkin "0.3.4"]
+        [prismatic/schema "0.4.4"]
+        [quoin "0.1.2"]
+        [reply "0.3.5"]
+        [riddley "0.1.6"]
+        [ring/ring-core "1.0.2"]
+        [robert/hooke "1.3.0"]
+        [scout "0.1.0"]
+        [slingshot "0.10.3"]
+        [stencil "0.3.5"]
+        [trptcolin/versioneer "0.1.1"]
+
+!ENTRY ccw.core 1 0 2019-09-02 08:22:54.148
+!MESSAGE CCWPlugin.start(): EXIT
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-09-02 08:22:54.527
+!MESSAGE Unable to create class 'org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon' from bundle '272'
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1001)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:411)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:347)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:227)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:94)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:289)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:589)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:145)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 26 more
+
+!ENTRY org.eclipse.egit.core 1 0 2019-09-02 08:22:55.708
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-09-02 08:22:57.320
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-09-02 08:22:57.320
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2b6a4da7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(pl.szpinda.plugin.tomcat.commands.tomcatStartStop,Tomcat start,stop,
+		,
+		Category(pl.szpinda.plugin.tomcat.commands.category.key,Tomcat keys,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@75b6bd41,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-09-02 08:22:57.321
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@21457b14,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7e484bd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jface.text 2 0 2019-09-02 08:23:03.038
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:23:06.651
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:23:06.652
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@333813e7[org.springframework.tooling.boot.ls:1.7.0.201905231938(id=1006)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:23:06.655
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:23:06.770
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-02 08:23:08.316
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.outline.EditorToOutlineAdapterFactory.getAdapter(EditorToOutlineAdapterFactory.java:47)
+	at org.eclipse.core.internal.adapter.AdapterFactoryProxy.getAdapter(AdapterFactoryProxy.java:85)
+	at org.eclipse.core.internal.runtime.AdapterManager.getAdapter(AdapterManager.java:298)
+	at org.eclipse.ui.part.WorkbenchPart.getAdapter(WorkbenchPart.java:145)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.getAdapter(AbstractTextEditor.java:6184)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.getAdapter(AbstractDecoratedTextEditor.java:1429)
+	at org.eclipse.ui.editors.text.TextEditor.getAdapter(TextEditor.java:163)
+	at org.eclipse.core.runtime.Adapters.adapt(Adapters.java:63)
+	at org.eclipse.core.runtime.Adapters.adapt(Adapters.java:112)
+	at org.eclipse.ui.views.contentoutline.ContentOutline.doCreatePage(ContentOutline.java:135)
+	at org.eclipse.ui.part.PageBookView.createPage(PageBookView.java:378)
+	at org.eclipse.ui.part.PageBookView.partActivated(PageBookView.java:718)
+	at org.eclipse.ui.part.PageBookView.showBootstrapPart(PageBookView.java:893)
+	at org.eclipse.ui.part.PageBookView.createPartControl(PageBookView.java:462)
+	at org.eclipse.ui.views.contentoutline.ContentOutline.createPartControl(ContentOutline.java:127)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:156)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:367)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1001)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:411)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:333)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:560)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:544)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1295)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:693)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:105)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:64)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:693)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1099)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-02 08:23:08.373
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.outline.EditorToOutlineAdapterFactory.getAdapter(EditorToOutlineAdapterFactory.java:47)
+	at org.eclipse.core.internal.runtime.AdapterManager.getAdapter(AdapterManager.java:338)
+	at org.eclipse.core.internal.runtime.AdapterManager.loadAdapter(AdapterManager.java:365)
+	at org.eclipse.core.runtime.Adapters.queryAdapterManager(Adapters.java:118)
+	at org.eclipse.core.runtime.Adapters.adapt(Adapters.java:81)
+	at org.eclipse.core.runtime.Adapters.adapt(Adapters.java:112)
+	at org.eclipse.ui.views.contentoutline.ContentOutline.doCreatePage(ContentOutline.java:135)
+	at org.eclipse.ui.part.PageBookView.createPage(PageBookView.java:378)
+	at org.eclipse.ui.part.PageBookView.partActivated(PageBookView.java:718)
+	at org.eclipse.ui.part.PageBookView.showBootstrapPart(PageBookView.java:893)
+	at org.eclipse.ui.part.PageBookView.createPartControl(PageBookView.java:462)
+	at org.eclipse.ui.views.contentoutline.ContentOutline.createPartControl(ContentOutline.java:127)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:156)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:367)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1001)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:411)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:333)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:560)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:544)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1295)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:693)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:105)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:64)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:693)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1099)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-09-02 08:23:14.199
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Utilisateur'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY ccw.core 1 0 2019-09-02 08:23:17.584
+!MESSAGE Loaded User Script C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-ansi-repl\ansi-repl.clj
+
+!ENTRY ccw.core 1 0 2019-09-02 08:23:17.585
+!MESSAGE Loaded User Plugin: C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-ansi-repl
+
+!ENTRY ccw.core 1 0 2019-09-02 08:23:17.681
+!MESSAGE Loaded User Script C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-hello-world\hello-world.clj
+
+!ENTRY ccw.core 1 0 2019-09-02 08:23:17.683
+!MESSAGE Loaded User Plugin: C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-hello-world
+
+!ENTRY ccw.core 1 0 2019-09-02 08:23:18.190
+!MESSAGE Loaded User Script C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-hyperlink\script.clj
+
+!ENTRY ccw.core 1 0 2019-09-02 08:23:18.191
+!MESSAGE Loaded User Plugin: C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-hyperlink
+
+!ENTRY ccw.core 1 0 2019-09-02 08:23:18.445
+!MESSAGE Loaded User Script C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-manager\ccw-plugin-manager.clj
+
+!ENTRY ccw.core 1 0 2019-09-02 08:23:18.446
+!MESSAGE Loaded User Plugin: C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-manager
+
+!ENTRY ccw.core 1 0 2019-09-02 08:23:18.840
+!MESSAGE Loaded User Script C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-zoom\ccw-plugin-zoom.clj
+
+!ENTRY ccw.core 1 0 2019-09-02 08:23:18.841
+!MESSAGE Loaded User Plugin: C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-zoom
+
+!ENTRY ccw.core 1 0 2019-09-02 08:23:18.843
+!MESSAGE Loaded User Plugins
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:23:23.795
+!MESSAGE Boot LS startup time from start to initialized: 17121ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:23:24.116
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.IVKKuhnD
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:23:24.151
+!MESSAGE subscribing to classpath changes: sts4.classpath.IVKKuhnD
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:23:24.155
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:23:24.157
+!MESSAGE subsribers = [sts4.classpath.IVKKuhnD]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:23:24.158
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:23:24.201
+!MESSAGE project FeedBackIsepBack ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:23:24.202
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:23:24.203
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.IVKKuhnD => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:23:24.211
+!MESSAGE Preparing classpath changed notification FeedBackIsepBack
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:23:24.217
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:23:24.500
+!MESSAGE classpath=86 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:23:24.502
+!MESSAGE executing callback sts4.classpath.IVKKuhnD FeedBackIsepBack false 86
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:23:25.161
+!MESSAGE executing callback sts4.classpath.IVKKuhnD SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:27:01.056
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.IVKKuhnD
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:27:01.057
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.IVKKuhnD
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:27:01.058
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:27:01.059
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.IVKKuhnD => OK
+
+!ENTRY org.eclipse.ui 2 2 2019-09-02 08:27:02.115
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY ccw.core 1 0 2019-09-02 08:27:02.816
+!MESSAGE Stopping ccw nREPL server...
+!SESSION 2019-09-02 08:27:45.705 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=1.8.0_211
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ccw.core 1 0 2019-09-02 08:28:13.356
+!MESSAGE CCWPlugin.start(): ENTER
+
+!ENTRY ccw.core 1 0 2019-09-02 08:28:15.332
+!MESSAGE Counterclockwise dependencies:
+        [bultitude "0.2.1"]
+        [ccw/ccw.server "0.2.1"]
+        [ccw/clojure-ccw "1.7.0"]
+        [cheshire "5.0.2"]
+        [classlojure "0.6.6"]
+        [clj-http "0.9.2"]
+        [clj-stacktrace "0.2.7"]
+        [clj-tuple "0.1.2"]
+        [clojure-complete "0.2.3"]
+        [com.cemerick/drawbridge "0.0.6"]
+        [com.cemerick/pomegranate "0.3.0"]
+        [com.fasterxml.jackson.core/jackson-core "2.1.3"]
+        [com.fasterxml.jackson.dataformat/jackson-dataformat-smile "2.1.2"]
+        [com.hypirion/io "0.3.1"]
+        [commons-codec "1.9"]
+        [commons-fileupload "1.2.1"]
+        [commons-io "2.4"]
+        [commons-lang "2.6"]
+        [commons-logging "1.1.3"]
+        [dynapath "0.2.0"]
+        [jline "2.12"]
+        [leiningen "2.5.1"]
+        [leiningen-core "2.5.1"]
+        [net.cgrand/parsley "0.9.2"]
+        [net.cgrand/regex "1.1.0"]
+        [net.cgrand/sjacket "0.1.1"]
+        [net.mikera/cljunit "0.2.0"]
+        [org.apache.httpcomponents/httpclient "4.3.3"]
+        [org.apache.httpcomponents/httpcore "4.3.2"]
+        [org.apache.httpcomponents/httpmime "4.3.3"]
+        [org.apache.maven/maven-aether-provider "3.0.4"]
+        [org.apache.maven/maven-model "3.0.4"]
+        [org.apache.maven/maven-model-builder "3.0.4"]
+        [org.apache.maven/maven-repository-metadata "3.0.4"]
+        [org.apache.maven.indexer/indexer-artifact "4.1.3"]
+        [org.apache.maven.indexer/indexer-core "4.1.3"]
+        [org.apache.maven.wagon/wagon-http "2.7"]
+        [org.apache.maven.wagon/wagon-http-shared "2.7"]
+        [org.apache.maven.wagon/wagon-provider-api "2.2"]
+        [org.clojure/clojure-contrib "1.2.0"]
+        [org.clojure/core.incubator "0.1.0"]
+        [org.clojure/data.xml "0.0.3"]
+        [org.clojure/java.classpath "0.2.2"]
+        [org.clojure/java.data "0.1.1"]
+        [org.clojure/tools.cli "0.3.1"]
+        [org.clojure/tools.logging "0.2.3"]
+        [org.clojure/tools.macro "0.1.1"]
+        [org.clojure/tools.nrepl "0.2.10"]
+        [org.clojure/tools.reader "0.8.4"]
+        [org.codehaus.plexus/plexus-classworlds "2.4"]
+        [org.codehaus.plexus/plexus-component-annotations "1.5.5"]
+        [org.codehaus.plexus/plexus-interpolation "1.14"]
+        [org.codehaus.plexus/plexus-utils "2.0.6"]
+        [org.jsoup/jsoup "1.7.2"]
+        [org.sonatype.aether/aether-api "1.13.1"]
+        [org.sonatype.aether/aether-connector-file "1.13.1"]
+        [org.sonatype.aether/aether-connector-wagon "1.13.1"]
+        [org.sonatype.aether/aether-impl "1.13.1"]
+        [org.sonatype.aether/aether-spi "1.13.1"]
+        [org.sonatype.aether/aether-util "1.13.1"]
+        [org.sonatype.sisu/sisu-inject-bean "2.2.3"]
+        [org.sonatype.sisu/sisu-inject-plexus "2.2.3"]
+        [org.tcrawley/dynapath "0.2.3"]
+        [pedantic "0.2.0"]
+        [potemkin "0.3.4"]
+        [prismatic/schema "0.4.4"]
+        [quoin "0.1.2"]
+        [reply "0.3.5"]
+        [riddley "0.1.6"]
+        [ring/ring-core "1.0.2"]
+        [robert/hooke "1.3.0"]
+        [scout "0.1.0"]
+        [slingshot "0.10.3"]
+        [stencil "0.3.5"]
+        [trptcolin/versioneer "0.1.1"]
+
+!ENTRY ccw.core 1 0 2019-09-02 08:28:24.163
+!MESSAGE CCWPlugin.start(): EXIT
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-09-02 08:28:24.293
+!MESSAGE Unable to create class 'org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon' from bundle '272'
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1001)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:411)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:347)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:227)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:94)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:289)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:589)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:145)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 26 more
+
+!ENTRY org.eclipse.egit.core 1 0 2019-09-02 08:28:25.053
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-09-02 08:28:26.241
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-09-02 08:28:26.241
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@32eac39b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(pl.szpinda.plugin.tomcat.commands.tomcatStartStop,Tomcat start,stop,
+		,
+		Category(pl.szpinda.plugin.tomcat.commands.category.key,Tomcat keys,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4ef0bc5b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-09-02 08:28:26.241
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@83bbab,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@67b2c8bb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:28:32.449
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:28:32.450
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@193e65d5[org.springframework.tooling.boot.ls:1.7.0.201905231938(id=1006)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:28:32.454
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:28:32.519
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.jface.text 2 0 2019-09-02 08:28:32.753
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-09-02 08:28:35.583
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Utilisateur'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY ccw.core 1 0 2019-09-02 08:28:39.700
+!MESSAGE Loaded User Script C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-ansi-repl\ansi-repl.clj
+
+!ENTRY ccw.core 1 0 2019-09-02 08:28:39.702
+!MESSAGE Loaded User Plugin: C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-ansi-repl
+
+!ENTRY ccw.core 1 0 2019-09-02 08:28:39.821
+!MESSAGE Loaded User Script C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-hello-world\hello-world.clj
+
+!ENTRY ccw.core 1 0 2019-09-02 08:28:39.822
+!MESSAGE Loaded User Plugin: C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-hello-world
+
+!ENTRY ccw.core 1 0 2019-09-02 08:28:40.370
+!MESSAGE Loaded User Script C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-hyperlink\script.clj
+
+!ENTRY ccw.core 1 0 2019-09-02 08:28:40.371
+!MESSAGE Loaded User Plugin: C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-hyperlink
+
+!ENTRY ccw.core 1 0 2019-09-02 08:28:40.737
+!MESSAGE Loaded User Script C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-manager\ccw-plugin-manager.clj
+
+!ENTRY ccw.core 1 0 2019-09-02 08:28:40.738
+!MESSAGE Loaded User Plugin: C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-manager
+
+!ENTRY ccw.core 1 0 2019-09-02 08:28:40.903
+!MESSAGE Loaded User Script C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-zoom\ccw-plugin-zoom.clj
+
+!ENTRY ccw.core 1 0 2019-09-02 08:28:40.903
+!MESSAGE Loaded User Plugin: C:\Users\Utilisateur\eclipse\jee-2019-03\eclipse\..\..\..\.p2\pool\plugins\ccw.core_0.35.1.STABLE001\ccw-plugins\ccw-plugin-zoom
+
+!ENTRY ccw.core 1 0 2019-09-02 08:28:40.904
+!MESSAGE Loaded User Plugins
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-02 08:28:43.661
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.outline.EditorToOutlineAdapterFactory.getAdapter(EditorToOutlineAdapterFactory.java:47)
+	at org.eclipse.core.internal.adapter.AdapterFactoryProxy.getAdapter(AdapterFactoryProxy.java:85)
+	at org.eclipse.core.internal.runtime.AdapterManager.getAdapter(AdapterManager.java:298)
+	at org.eclipse.ui.part.WorkbenchPart.getAdapter(WorkbenchPart.java:145)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.getAdapter(AbstractTextEditor.java:6184)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.getAdapter(AbstractDecoratedTextEditor.java:1429)
+	at org.eclipse.ui.editors.text.TextEditor.getAdapter(TextEditor.java:163)
+	at org.eclipse.core.runtime.Adapters.adapt(Adapters.java:63)
+	at org.eclipse.core.runtime.Adapters.adapt(Adapters.java:112)
+	at org.eclipse.ui.views.contentoutline.ContentOutline.doCreatePage(ContentOutline.java:135)
+	at org.eclipse.ui.part.PageBookView.createPage(PageBookView.java:378)
+	at org.eclipse.ui.part.PageBookView.partActivated(PageBookView.java:718)
+	at org.eclipse.ui.part.PageBookView.showBootstrapPart(PageBookView.java:893)
+	at org.eclipse.ui.part.PageBookView.createPartControl(PageBookView.java:462)
+	at org.eclipse.ui.views.contentoutline.ContentOutline.createPartControl(ContentOutline.java:127)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:156)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:367)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1001)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:411)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:333)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:560)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:544)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1295)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:693)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.lambda$0(LazyStackRenderer.java:75)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4580)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:139)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:1)
+	at org.eclipse.e4.ui.workbench.addons.perspectiveswitcher.PerspectiveSwitcher$4.widgetSelected(PerspectiveSwitcher.java:545)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-02 08:28:43.716
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.outline.EditorToOutlineAdapterFactory.getAdapter(EditorToOutlineAdapterFactory.java:47)
+	at org.eclipse.core.internal.runtime.AdapterManager.getAdapter(AdapterManager.java:338)
+	at org.eclipse.core.internal.runtime.AdapterManager.loadAdapter(AdapterManager.java:365)
+	at org.eclipse.core.runtime.Adapters.queryAdapterManager(Adapters.java:118)
+	at org.eclipse.core.runtime.Adapters.adapt(Adapters.java:81)
+	at org.eclipse.core.runtime.Adapters.adapt(Adapters.java:112)
+	at org.eclipse.ui.views.contentoutline.ContentOutline.doCreatePage(ContentOutline.java:135)
+	at org.eclipse.ui.part.PageBookView.createPage(PageBookView.java:378)
+	at org.eclipse.ui.part.PageBookView.partActivated(PageBookView.java:718)
+	at org.eclipse.ui.part.PageBookView.showBootstrapPart(PageBookView.java:893)
+	at org.eclipse.ui.part.PageBookView.createPartControl(PageBookView.java:462)
+	at org.eclipse.ui.views.contentoutline.ContentOutline.createPartControl(ContentOutline.java:127)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:156)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:367)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1001)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:411)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:333)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:560)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:544)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1295)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:693)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.lambda$0(LazyStackRenderer.java:75)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4580)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:139)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:1)
+	at org.eclipse.e4.ui.workbench.addons.perspectiveswitcher.PerspectiveSwitcher$4.widgetSelected(PerspectiveSwitcher.java:545)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-02 08:28:44.514
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.outline.EditorToOutlineAdapterFactory.getAdapter(EditorToOutlineAdapterFactory.java:47)
+	at org.eclipse.core.internal.adapter.AdapterFactoryProxy.getAdapter(AdapterFactoryProxy.java:85)
+	at org.eclipse.core.internal.runtime.AdapterManager.getAdapter(AdapterManager.java:298)
+	at org.eclipse.ui.part.WorkbenchPart.getAdapter(WorkbenchPart.java:145)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.getAdapter(AbstractTextEditor.java:6184)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.getAdapter(AbstractDecoratedTextEditor.java:1429)
+	at org.eclipse.ui.editors.text.TextEditor.getAdapter(TextEditor.java:163)
+	at org.eclipse.core.runtime.Adapters.adapt(Adapters.java:63)
+	at org.eclipse.core.runtime.Adapters.adapt(Adapters.java:112)
+	at org.eclipse.ui.views.contentoutline.ContentOutline.doCreatePage(ContentOutline.java:135)
+	at org.eclipse.ui.part.PageBookView.createPage(PageBookView.java:378)
+	at org.eclipse.ui.part.PageBookView.partActivated(PageBookView.java:718)
+	at org.eclipse.ui.part.PageBookView$1.partActivated(PageBookView.java:1031)
+	at org.eclipse.ui.internal.WorkbenchPage$4.run(WorkbenchPage.java:5083)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.WorkbenchPage.firePartActivated(WorkbenchPage.java:5080)
+	at org.eclipse.ui.internal.WorkbenchPage.access$3(WorkbenchPage.java:5056)
+	at org.eclipse.ui.internal.WorkbenchPage$E4PartListener.partActivated(WorkbenchPage.java:214)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$3.run(PartServiceImpl.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.firePartActivated(PartServiceImpl.java:250)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:775)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.switchPerspective(PartServiceImpl.java:643)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:105)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.lambda$0(LazyStackRenderer.java:75)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4580)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:139)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:1)
+	at org.eclipse.e4.ui.workbench.addons.perspectiveswitcher.PerspectiveSwitcher$4.widgetSelected(PerspectiveSwitcher.java:545)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-02 08:28:44.570
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.outline.EditorToOutlineAdapterFactory.getAdapter(EditorToOutlineAdapterFactory.java:47)
+	at org.eclipse.core.internal.runtime.AdapterManager.getAdapter(AdapterManager.java:338)
+	at org.eclipse.core.internal.runtime.AdapterManager.loadAdapter(AdapterManager.java:365)
+	at org.eclipse.core.runtime.Adapters.queryAdapterManager(Adapters.java:118)
+	at org.eclipse.core.runtime.Adapters.adapt(Adapters.java:81)
+	at org.eclipse.core.runtime.Adapters.adapt(Adapters.java:112)
+	at org.eclipse.ui.views.contentoutline.ContentOutline.doCreatePage(ContentOutline.java:135)
+	at org.eclipse.ui.part.PageBookView.createPage(PageBookView.java:378)
+	at org.eclipse.ui.part.PageBookView.partActivated(PageBookView.java:718)
+	at org.eclipse.ui.part.PageBookView$1.partActivated(PageBookView.java:1031)
+	at org.eclipse.ui.internal.WorkbenchPage$4.run(WorkbenchPage.java:5083)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.WorkbenchPage.firePartActivated(WorkbenchPage.java:5080)
+	at org.eclipse.ui.internal.WorkbenchPage.access$3(WorkbenchPage.java:5056)
+	at org.eclipse.ui.internal.WorkbenchPage$E4PartListener.partActivated(WorkbenchPage.java:214)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$3.run(PartServiceImpl.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.firePartActivated(PartServiceImpl.java:250)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:775)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.switchPerspective(PartServiceImpl.java:643)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:105)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.lambda$0(LazyStackRenderer.java:75)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4580)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:139)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:1)
+	at org.eclipse.e4.ui.workbench.addons.perspectiveswitcher.PerspectiveSwitcher$4.widgetSelected(PerspectiveSwitcher.java:545)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:28:59.094
+!MESSAGE Boot LS startup time from start to initialized: 26603ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:28:59.178
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.vHJuAyML
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:28:59.179
+!MESSAGE subscribing to classpath changes: sts4.classpath.vHJuAyML
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:28:59.181
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:28:59.182
+!MESSAGE subsribers = [sts4.classpath.vHJuAyML]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:28:59.183
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:28:59.225
+!MESSAGE project FeedBackIsepBack ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:28:59.226
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:28:59.227
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.vHJuAyML => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:28:59.230
+!MESSAGE Preparing classpath changed notification FeedBackIsepBack
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:28:59.231
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:28:59.252
+!MESSAGE classpath=86 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:28:59.253
+!MESSAGE executing callback sts4.classpath.vHJuAyML FeedBackIsepBack false 86
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-02 08:28:59.399
+!MESSAGE executing callback sts4.classpath.vHJuAyML SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-02 08:29:01.856
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverRegion(LSBasedHover.java:184)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:142)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.egit.ui 4 0 2019-09-02 08:30:01.070
+!MESSAGE Le processus ne peut pas accéder au fichier car un autre processus en a verrouillé une partie
+!STACK 0
+java.io.IOException: Le processus ne peut pas accéder au fichier car un autre processus en a verrouillé une partie
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:290)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:141)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:122)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:239)
+	at org.eclipse.egit.ui.internal.staging.StagingView$54.run(StagingView.java:3473)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2019-09-02 08:30:13.249
+!MESSAGE Le processus ne peut pas accéder au fichier car un autre processus en a verrouillé une partie
+!STACK 0
+java.io.IOException: Le processus ne peut pas accéder au fichier car un autre processus en a verrouillé une partie
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:290)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:141)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:122)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:239)
+	at org.eclipse.egit.ui.internal.staging.StagingView$54.run(StagingView.java:3473)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
