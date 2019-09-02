@@ -24,7 +24,7 @@ import java.util.Map;
 @javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-01T00:52:54.999Z[GMT]")
 @Controller
 public class CoursesApiController implements CoursesApi {
-
+	String yo = "yo"
     private static final Logger log = LoggerFactory.getLogger(CoursesApiController.class);
 
     private final ObjectMapper objectMapper;
