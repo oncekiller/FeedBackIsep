@@ -26,12 +26,7 @@ import java.util.Map;
 
 @Controller
 public class CourseApiController implements CourseApi {
-	String yo = "yo";
-	String yo2 = "yo";
-	String yo3 = "yo";
-	String yo4 = "yo";
-	String yo5 = "yo";
-	String yo6 = "yo";
+	
 	
     private static final Logger log = LoggerFactory.getLogger(CourseApiController.class);
 
