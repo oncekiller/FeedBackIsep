@@ -1,0 +1,163 @@
+2019-09-01 03:59:35,572 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-09-01 04:00:08,858 [Worker-0: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-09-01 04:00:10,816 [Worker-0: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: io.swagger:swagger-spring:1.0.0 @ C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\pom.xml.
+2019-09-01 04:00:14,489 [Worker-0: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /FeedBackIsepBack/src/main/java
+2019-09-01 04:00:14,490 [Worker-0: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /FeedBackIsepBack/src/main/resources
+2019-09-01 04:00:14,500 [Worker-0: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /FeedBackIsepBack/src/main/resources
+2019-09-01 04:00:14,513 [Worker-0: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /FeedBackIsepBack/src/test/java
+2019-09-01 04:00:17,009 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:00:17,016 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:00:17,034 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:00:17,038 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:00:17,039 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:00:19,102 [Worker-0: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 10 sec
+2019-09-01 04:00:19,249 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:00:19,254 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:00:19,257 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:00:19,259 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:00:19,260 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:00:32,368 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:00:32,368 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:00:32,369 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:00:32,372 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:00:32,372 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:00:39,665 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:00:39,666 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:00:39,667 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:00:39,669 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:00:39,670 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:01:00,526 [Worker-7: Launching Executing clean in C__Users_Utilisateur_git_FeedBackIsep_FeedBackIsepBack] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack
+2019-09-01 04:01:00,528 [Worker-7: Launching Executing clean in C__Users_Utilisateur_git_FeedBackIsep_FeedBackIsepBack] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean
+2019-09-01 04:01:06,962 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:01:06,963 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:01:06,973 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:01:06,976 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:01:06,977 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:01:20,314 [Worker-2: Launching Executing install in C__Users_Utilisateur_git_FeedBackIsep_FeedBackIsepBack] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack
+2019-09-01 04:01:20,314 [Worker-2: Launching Executing install in C__Users_Utilisateur_git_FeedBackIsep_FeedBackIsepBack] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2019-09-01 04:01:27,775 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:01:27,777 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:01:27,779 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:01:27,782 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:01:27,782 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:03:43,718 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:03:43,720 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:03:43,724 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:03:43,727 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:03:43,727 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:03:53,881 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:03:53,882 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:03:53,884 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:03:53,888 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:03:53,889 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:04:05,581 [Worker-3: Launching Executing install in C__Users_Utilisateur_git_FeedBackIsep_FeedBackIsepBack] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack
+2019-09-01 04:04:05,582 [Worker-3: Launching Executing install in C__Users_Utilisateur_git_FeedBackIsep_FeedBackIsepBack] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2019-09-01 04:04:56,157 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:04:56,158 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:04:56,160 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:04:56,162 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:04:56,162 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:15:41,614 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:15:41,616 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:15:41,618 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:15:41,620 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:15:41,621 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:15:45,830 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:15:45,832 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:15:45,834 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:15:45,836 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:15:45,837 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:17:07,727 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:17:07,728 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:17:07,731 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:17:07,733 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:17:07,734 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:17:47,270 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:17:47,271 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:17:47,273 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:17:47,276 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:17:47,276 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:18:51,180 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:18:51,182 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:18:51,184 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:18:51,187 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:18:51,188 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:19:14,683 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:19:14,684 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:19:14,686 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:19:14,689 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:19:14,689 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:20:22,899 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:20:22,900 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:20:22,903 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:20:22,907 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:20:22,908 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:21:09,300 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:21:09,301 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:21:09,315 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:21:09,321 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:21:09,321 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:24:15,850 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:24:15,852 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:24:15,853 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:24:15,855 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:24:15,855 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:33:52,180 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:33:52,181 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:33:52,183 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:33:52,186 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:33:52,187 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:36:21,902 [Worker-5: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:36:21,904 [Worker-5: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:36:21,907 [Worker-5: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:36:21,911 [Worker-5: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:36:21,911 [Worker-5: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:43:46,888 [Worker-17: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:43:46,888 [Worker-17: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:43:46,890 [Worker-17: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:43:46,894 [Worker-17: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:43:46,894 [Worker-17: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:48:31,069 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-09-01 04:53:49,826 [Worker-6: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:53:49,833 [Worker-6: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:53:49,847 [Worker-6: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:53:49,850 [Worker-6: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:53:49,850 [Worker-6: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:55:13,834 [Worker-12: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:55:13,841 [Worker-12: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:55:13,844 [Worker-12: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:55:13,851 [Worker-12: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:55:13,851 [Worker-12: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:56:58,258 [Worker-16: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:56:58,260 [Worker-16: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:56:58,269 [Worker-16: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:56:58,271 [Worker-16: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:56:58,271 [Worker-16: Launching FeedBackIsepBack - Swagger2SpringBoot] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-01 04:58:53,383 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:58:53,387 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-01 04:58:53,390 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-01 04:58:53,392 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-01 04:58:53,393 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-02 08:23:10,450 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2019-09-03 10:16:49,593 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-03 10:16:49,608 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-03 10:16:49,640 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-03 10:16:49,640 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-03 10:16:49,640 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-03 10:17:04,246 [Worker-0: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: io.swagger:swagger-spring:1.0.0 @ C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\pom.xml.
+2019-09-03 10:17:05,527 [Worker-11: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-09-03 10:17:06,090 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-03 10:17:06,090 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-03 10:17:06,090 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-03 10:17:06,090 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-03 10:17:06,090 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-03 10:17:13,805 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-03 10:17:13,805 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-03 10:17:13,805 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-03 10:17:13,821 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-03 10:17:13,821 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
+2019-09-03 10:18:14,759 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-03 10:18:14,759 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-03 10:18:14,775 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-03 10:18:14,775 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-03 10:18:14,775 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilisateur\git\FeedBackIsep\FeedBackIsepBack\src\test\resources
