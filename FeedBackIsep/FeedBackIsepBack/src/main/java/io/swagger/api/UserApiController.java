@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-01T00:52:54.999Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-06T03:38:36.462Z[GMT]")
 @Controller
 public class UserApiController implements UserApi {
 
@@ -46,7 +46,7 @@ public class UserApiController implements UserApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<String>(objectMapper.readValue("''", String.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<String>(objectMapper.readValue("\"\"", String.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<String>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -60,29 +60,7 @@ public class UserApiController implements UserApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<List<User>>(objectMapper.readValue("[ {\"firstname\" : \"Antoine\",\n" + 
-                		"  \"password\" : \"root\",\n" + 
-                		"  \"mail\" : \"canard.antoine@gmail.com\",\n" + 
-                		"  \"color\" : \"#222222\",\n" + 
-                		"  \"parent_id\" : 11,\n" + 
-                		"  \"isep_id\" : 9236,\n" + 
-                		"  \"id\" : 11,\n" + 
-                		"  \"avatar\" : \"./pictureAvatar\",\n" + 
-                		"  \"enabled\" : true,\n" + 
-                		"  \"username\" : \"acanard\",\n" + 
-                		"  \"lastname\" : \"CANARD\"\n" + 
-                		"}, {\n" + 
-                		"  \"firstname\" : \"Antoine\",\n" + 
-                		"  \"password\" : \"root\",\n" + 
-                		"  \"mail\" : \"canard.antoine@gmail.com\",\n" + 
-                		"  \"color\" : \"#222222\",\n" + 
-                		"  \"parent_id\" : 11,\n" + 
-                		"  \"isep_id\" : 9236,\n" + 
-                		"  \"id\" : 11,\n" + 
-                		"  \"avatar\" : \"./pictureAvatar\",\n" + 
-                		"  \"enabled\" : true,\n" + 
-                		"  \"username\" : \"acanard\",\n" + 
-                		"  \"lastname\" : \"CANARD\"} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<List<User>>(objectMapper.readValue("[ {\n  \"firstname\" : \"Antoine\",\n  \"password\" : \"root\",\n  \"mail\" : \"canard.antoine@gmail.com\",\n  \"color\" : \"#222222\",\n  \"satus\" : \"ROLE_TEACHER\",\n  \"parent_id\" : 11,\n  \"isep_id\" : 9236,\n  \"id\" : 11,\n  \"avatar\" : \"./pictureAvatar\",\n  \"enabled\" : true,\n  \"username\" : \"acanard\",\n  \"lastname\" : \"CANARD\"\n}, {\n  \"firstname\" : \"Antoine\",\n  \"password\" : \"root\",\n  \"mail\" : \"canard.antoine@gmail.com\",\n  \"color\" : \"#222222\",\n  \"satus\" : \"ROLE_TEACHER\",\n  \"parent_id\" : 11,\n  \"isep_id\" : 9236,\n  \"id\" : 11,\n  \"avatar\" : \"./pictureAvatar\",\n  \"enabled\" : true,\n  \"username\" : \"acanard\",\n  \"lastname\" : \"CANARD\"\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<List<User>>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -96,29 +74,7 @@ public class UserApiController implements UserApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<List<User>>(objectMapper.readValue("[ { \"firstname\" : \"Antoine\",\n" + 
-                		"  \"password\" : \"root\",\n" + 
-                		"  \"mail\" : \"canard.antoine@gmail.com\",\n" + 
-                		"  \"color\" : \"#222222\",\n" + 
-                		"  \"parent_id\" : 11,\n" + 
-                		"  \"isep_id\" : 9236,\n" + 
-                		"  \"id\" : 11,\n" + 
-                		"  \"avatar\" : \"./pictureAvatar\",\n" + 
-                		"  \"enabled\" : true,\n" + 
-                		"  \"username\" : \"acanard\",\n" + 
-                		"  \"lastname\" : \"CANARD\"\n" + 
-                		"}, {\n" + 
-                		"  \"firstname\" : \"Antoine\",\n" + 
-                		"  \"password\" : \"root\",\n" + 
-                		"  \"mail\" : \"canard.antoine@gmail.com\",\n" + 
-                		"  \"color\" : \"#222222\",\n" + 
-                		"  \"parent_id\" : 11,\n" + 
-                		"  \"isep_id\" : 9236,\n" + 
-                		"  \"id\" : 11,\n" + 
-                		"  \"avatar\" : \"./pictureAvatar\",\n" + 
-                		"  \"enabled\" : true,\n" + 
-                		"  \"username\" : \"acanard\",\n" + 
-                		"  \"lastname\" : \"CANARD\"} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<List<User>>(objectMapper.readValue("[ {\n  \"firstname\" : \"Antoine\",\n  \"password\" : \"root\",\n  \"mail\" : \"canard.antoine@gmail.com\",\n  \"color\" : \"#222222\",\n  \"satus\" : \"ROLE_TEACHER\",\n  \"parent_id\" : 11,\n  \"isep_id\" : 9236,\n  \"id\" : 11,\n  \"avatar\" : \"./pictureAvatar\",\n  \"enabled\" : true,\n  \"username\" : \"acanard\",\n  \"lastname\" : \"CANARD\"\n}, {\n  \"firstname\" : \"Antoine\",\n  \"password\" : \"root\",\n  \"mail\" : \"canard.antoine@gmail.com\",\n  \"color\" : \"#222222\",\n  \"satus\" : \"ROLE_TEACHER\",\n  \"parent_id\" : 11,\n  \"isep_id\" : 9236,\n  \"id\" : 11,\n  \"avatar\" : \"./pictureAvatar\",\n  \"enabled\" : true,\n  \"username\" : \"acanard\",\n  \"lastname\" : \"CANARD\"\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<List<User>>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -132,17 +88,7 @@ public class UserApiController implements UserApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<User>(objectMapper.readValue("{'firstname' : 'Antoine',\n" + 
-                		"  'password' : 'root',\n" + 
-                		"  'mail' : 'canard.antoine@gmail.com',\n" + 
-                		"  'color' : ''#222222',\n" + 
-                		"  'parent_id' : 11,\n" + 
-                		"  'isep_id' : 9236,\n" + 
-                		"  'id' : 11,\n" + 
-                		"  'avatar' : './pictureAvatar',\n" + 
-                		"  'enabled' : true,\n" + 
-                		"  'username' : 'acanard',\n" + 
-                		"  'lastname' : 'CANARD'}", User.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<User>(objectMapper.readValue("{\n  \"firstname\" : \"Antoine\",\n  \"password\" : \"root\",\n  \"mail\" : \"canard.antoine@gmail.com\",\n  \"color\" : \"#222222\",\n  \"satus\" : \"ROLE_TEACHER\",\n  \"parent_id\" : 11,\n  \"isep_id\" : 9236,\n  \"id\" : 11,\n  \"avatar\" : \"./pictureAvatar\",\n  \"enabled\" : true,\n  \"username\" : \"acanard\",\n  \"lastname\" : \"CANARD\"\n}", User.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<User>(HttpStatus.INTERNAL_SERVER_ERROR);

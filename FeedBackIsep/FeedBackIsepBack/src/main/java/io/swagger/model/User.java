@@ -13,7 +13,7 @@ import javax.validation.constraints.*;
  * User
  */
 @Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-01T00:52:54.999Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-06T03:38:36.462Z[GMT]")
 public class User   {
   @JsonProperty("id")
   private Long id = null;
@@ -26,6 +26,9 @@ public class User   {
 
   @JsonProperty("lastname")
   private String lastname = null;
+
+  @JsonProperty("satus")
+  private String satus = null;
 
   @JsonProperty("isep_id")
   private Long isepId = null;
@@ -126,6 +129,25 @@ public class User   {
 
   public void setLastname(String lastname) {
     this.lastname = lastname;
+  }
+
+  public User satus(String satus) {
+    this.satus = satus;
+    return this;
+  }
+
+  /**
+   * Get satus
+   * @return satus
+  **/
+  @ApiModelProperty(example = "ROLE_TEACHER", value = "")
+
+  public String getSatus() {
+    return satus;
+  }
+
+  public void setSatus(String satus) {
+    this.satus = satus;
   }
 
   public User isepId(Long isepId) {
@@ -237,8 +259,7 @@ public class User   {
    * Get parentId
    * @return parentId
   **/
-  @ApiModelProperty(example = "11", required = true, value = "")
-  @NotNull
+  @ApiModelProperty(example = "11", value = "")
 
   public Long getParentId() {
     return parentId;
@@ -282,6 +303,7 @@ public class User   {
         Objects.equals(this.username, user.username) &&
         Objects.equals(this.firstname, user.firstname) &&
         Objects.equals(this.lastname, user.lastname) &&
+        Objects.equals(this.satus, user.satus) &&
         Objects.equals(this.isepId, user.isepId) &&
         Objects.equals(this.mail, user.mail) &&
         Objects.equals(this.password, user.password) &&
@@ -293,7 +315,7 @@ public class User   {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, username, firstname, lastname, isepId, mail, password, avatar, color, parentId, enabled);
+    return Objects.hash(id, username, firstname, lastname, satus, isepId, mail, password, avatar, color, parentId, enabled);
   }
 
   @Override
@@ -305,6 +327,7 @@ public class User   {
     sb.append("    username: ").append(toIndentedString(username)).append("\n");
     sb.append("    firstname: ").append(toIndentedString(firstname)).append("\n");
     sb.append("    lastname: ").append(toIndentedString(lastname)).append("\n");
+    sb.append("    satus: ").append(toIndentedString(satus)).append("\n");
     sb.append("    isepId: ").append(toIndentedString(isepId)).append("\n");
     sb.append("    mail: ").append(toIndentedString(mail)).append("\n");
     sb.append("    password: ").append(toIndentedString(password)).append("\n");

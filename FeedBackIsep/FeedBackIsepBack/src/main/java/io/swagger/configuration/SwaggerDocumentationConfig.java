@@ -10,19 +10,19 @@ import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-01T00:52:54.999Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-06T03:38:36.462Z[GMT]")
 @Configuration
 public class SwaggerDocumentationConfig {
 
     ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-            .title("Simple Inventory API")
-            .description("Api for the application FeedbackISEP")
-            .license("Apache 2.0")
-            .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html")
+            .title("Sample Application Flow OAuth2 Project")
+            .description("This is an example of using OAuth2 Application Flow in a specification to describe security to your API.")
+            .license("")
+            .licenseUrl("http://unlicense.org")
             .termsOfServiceUrl("")
             .version("1.0.0")
-            .contact(new Contact("","", "you@your-company.com"))
+            .contact(new Contact("","", ""))
             .build();
     }
 

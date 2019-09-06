@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-01T00:52:54.999Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-06T03:38:36.462Z[GMT]")
 @Controller
 public class CourseDocumentApiController implements CourseDocumentApi {
 
@@ -46,7 +46,7 @@ public class CourseDocumentApiController implements CourseDocumentApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<String>(objectMapper.readValue("''", String.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<String>(objectMapper.readValue("\"\"", String.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<String>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -60,17 +60,7 @@ public class CourseDocumentApiController implements CourseDocumentApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<List<CourseDocument>>(objectMapper.readValue("[ {"
-                		+ "\"course_id\" : 11,\n" + 
-                		"  \"document\" : \"./documentLink\",\n" + 
-                		"  \"id\" : 11,\n" + 
-                		"  \"userPost_id\" : 11\n" + 
-                		"}, {\n" + 
-                		"  \"course_id\" : 11,\n" + 
-                		"  \"document\" : \"./documentLink\",\n" + 
-                		"  \"id\" : 11,\n" + 
-                		"  \"userPost_id\" : 11"
-                		+ "} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<List<CourseDocument>>(objectMapper.readValue("[ {\n  \"course_id\" : 11,\n  \"document\" : \"./documentLink\",\n  \"name\" : \"documentName\",\n  \"id\" : 11,\n  \"userPost_id\" : 11\n}, {\n  \"course_id\" : 11,\n  \"document\" : \"./documentLink\",\n  \"name\" : \"documentName\",\n  \"id\" : 11,\n  \"userPost_id\" : 11\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<List<CourseDocument>>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -84,17 +74,7 @@ public class CourseDocumentApiController implements CourseDocumentApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<List<CourseDocument>>(objectMapper.readValue("[ {"
-                		+ "\"course_id\" : 11,\n" + 
-                		"  \"document\" : \"./documentLink\",\n" + 
-                		"  \"id\" : 11,\n" + 
-                		"  \"userPost_id\" : 11\n" + 
-                		"}, {\n" + 
-                		"  \"course_id\" : 11,\n" + 
-                		"  \"document\" : \"./documentLink\",\n" + 
-                		"  \"id\" : 11,\n" + 
-                		"  \"userPost_id\" : 11"
-                		+ "} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<List<CourseDocument>>(objectMapper.readValue("[ {\n  \"course_id\" : 11,\n  \"document\" : \"./documentLink\",\n  \"name\" : \"documentName\",\n  \"id\" : 11,\n  \"userPost_id\" : 11\n}, {\n  \"course_id\" : 11,\n  \"document\" : \"./documentLink\",\n  \"name\" : \"documentName\",\n  \"id\" : 11,\n  \"userPost_id\" : 11\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<List<CourseDocument>>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -108,12 +88,7 @@ public class CourseDocumentApiController implements CourseDocumentApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<CourseDocument>(objectMapper.readValue("{"
-                		+ "\"course_id\" : 11,\n" + 
-                		"  \"document\" : \"./documentLink\",\n" + 
-                		"  \"id\" : 11,\n" + 
-                		"  \"userPost_id\" : 11"
-                		+ "}", CourseDocument.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<CourseDocument>(objectMapper.readValue("{\n  \"course_id\" : 11,\n  \"document\" : \"./documentLink\",\n  \"name\" : \"documentName\",\n  \"id\" : 11,\n  \"userPost_id\" : 11\n}", CourseDocument.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<CourseDocument>(HttpStatus.INTERNAL_SERVER_ERROR);

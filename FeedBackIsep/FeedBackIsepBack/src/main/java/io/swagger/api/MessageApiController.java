@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-01T00:52:54.999Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-06T03:38:36.462Z[GMT]")
 @Controller
 public class MessageApiController implements MessageApi {
 
@@ -46,7 +46,7 @@ public class MessageApiController implements MessageApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<String>(objectMapper.readValue("''", String.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<String>(objectMapper.readValue("\"\"", String.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<String>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -60,21 +60,7 @@ public class MessageApiController implements MessageApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<List<Message>>(objectMapper.readValue("[ {"
-                		+ "\"dateTime\" : \"2000-01-23T04:56:07.000+00:00\",\n" + 
-                		"  \"read\" : true,\n" + 
-                		"  \"conversation_id\" : 11,\n" + 
-                		"  \"is_from_sender\" : true,\n" + 
-                		"  \"id\" : 11,\n" + 
-                		"  \"content\" : \"this is the content of the message\"\n" + 
-                		"}, {\n" + 
-                		"  \"dateTime\" : \"2000-01-23T04:56:07.000+00:00\",\n" + 
-                		"  \"read\" : true,\n" + 
-                		"  \"conversation_id\" : 11,\n" + 
-                		"  \"is_from_sender\" : true,\n" + 
-                		"  \"id\" : 11,\n" + 
-                		"  \"content\" : \"this is the content of the message\""
-                		+ "} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<List<Message>>(objectMapper.readValue("[ {\n  \"is_read\" : true,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"conversation_id\" : 11,\n  \"is_from_sender\" : true,\n  \"id\" : 11,\n  \"content\" : \"this is the content of the message\"\n}, {\n  \"is_read\" : true,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"conversation_id\" : 11,\n  \"is_from_sender\" : true,\n  \"id\" : 11,\n  \"content\" : \"this is the content of the message\"\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<List<Message>>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -88,21 +74,7 @@ public class MessageApiController implements MessageApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<List<Message>>(objectMapper.readValue("[ {"
-                		+ "\"dateTime\" : \"2000-01-23T04:56:07.000+00:00\",\n" + 
-                		"  \"read\" : true,\n" + 
-                		"  \"conversation_id\" : 11,\n" + 
-                		"  \"is_from_sender\" : true,\n" + 
-                		"  \"id\" : 11,\n" + 
-                		"  \"content\" : \"this is the content of the message\"\n" + 
-                		"}, {\n" + 
-                		"  \"dateTime\" : \"2000-01-23T04:56:07.000+00:00\",\n" + 
-                		"  \"read\" : true,\n" + 
-                		"  \"conversation_id\" : 11,\n" + 
-                		"  \"is_from_sender\" : true,\n" + 
-                		"  \"id\" : 11,\n" + 
-                		"  \"content\" : \"this is the content of the message\""
-                		+ "} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<List<Message>>(objectMapper.readValue("[ {\n  \"is_read\" : true,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"conversation_id\" : 11,\n  \"is_from_sender\" : true,\n  \"id\" : 11,\n  \"content\" : \"this is the content of the message\"\n}, {\n  \"is_read\" : true,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"conversation_id\" : 11,\n  \"is_from_sender\" : true,\n  \"id\" : 11,\n  \"content\" : \"this is the content of the message\"\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<List<Message>>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -116,14 +88,7 @@ public class MessageApiController implements MessageApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<Message>(objectMapper.readValue("{"
-                		+ " \"dateTime\" : \"2000-01-23T04:56:07.000+00:00\",\n" + 
-                		"  \"read\" : true,\n" + 
-                		"  \"conversation_id\" : 11,\n" + 
-                		"  \"is_from_sender\" : true,\n" + 
-                		"  \"id\" : 11,\n" + 
-                		"  \"content\" : \"this is the content of the message\""
-                		+ "}", Message.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<Message>(objectMapper.readValue("{\n  \"is_read\" : true,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"conversation_id\" : 11,\n  \"is_from_sender\" : true,\n  \"id\" : 11,\n  \"content\" : \"this is the content of the message\"\n}", Message.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<Message>(HttpStatus.INTERNAL_SERVER_ERROR);

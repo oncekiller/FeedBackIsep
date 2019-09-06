@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-01T00:52:54.999Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-06T03:38:36.462Z[GMT]")
 @Controller
 public class ConversationApiController implements ConversationApi {
 
@@ -46,7 +46,7 @@ public class ConversationApiController implements ConversationApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<String>(objectMapper.readValue("''", String.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<String>(objectMapper.readValue("\"\"", String.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<String>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -60,19 +60,7 @@ public class ConversationApiController implements ConversationApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<List<Conversation>>(objectMapper.readValue("[ {"
-                		+ "\"dateTime\" : \"2000-01-23T04:56:07.000+00:00\",\n" + 
-                		"  \"from_id\" : 11,\n" + 
-                		"  \"to_id\" : 11,\n" + 
-                		"  \"id\" : 11,\n" + 
-                		"  \"object\" : \"This is the object of the conversation\"\n" + 
-                		"}, {\n" + 
-                		"  \"dateTime\" : \"2000-01-23T04:56:07.000+00:00\",\n" + 
-                		"  \"from_id\" : 11,\n" + 
-                		"  \"to_id\" : 11,\n" + 
-                		"  \"id\" : 11,\n" + 
-                		"  \"object\" : \"This is the object of the conversation\"\n" + 
-                		"} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<List<Conversation>>(objectMapper.readValue("[ {\n  \"from_id\" : 11,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"to_id\" : 11,\n  \"id\" : 11,\n  \"object\" : \"This is the object of the conversation\"\n}, {\n  \"from_id\" : 11,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"to_id\" : 11,\n  \"id\" : 11,\n  \"object\" : \"This is the object of the conversation\"\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<List<Conversation>>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -86,19 +74,7 @@ public class ConversationApiController implements ConversationApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<List<Conversation>>(objectMapper.readValue("[ {"
-                		+ "\"dateTime\" : \"2000-01-23T04:56:07.000+00:00\",\n" + 
-                		"  \"from_id\" : 11,\n" + 
-                		"  \"to_id\" : 11,\n" + 
-                		"  \"id\" : 11,\n" + 
-                		"  \"object\" : \"This is the object of the conversation\"\n" + 
-                		"}, {\n" + 
-                		"  \"dateTime\" : \"2000-01-23T04:56:07.000+00:00\",\n" + 
-                		"  \"from_id\" : 11,\n" + 
-                		"  \"to_id\" : 11,\n" + 
-                		"  \"id\" : 11,\n" + 
-                		"  \"object\" : \"This is the object of the conversation\"\n" + 
-                		"} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<List<Conversation>>(objectMapper.readValue("[ {\n  \"from_id\" : 11,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"to_id\" : 11,\n  \"id\" : 11,\n  \"object\" : \"This is the object of the conversation\"\n}, {\n  \"from_id\" : 11,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"to_id\" : 11,\n  \"id\" : 11,\n  \"object\" : \"This is the object of the conversation\"\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<List<Conversation>>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -112,13 +88,7 @@ public class ConversationApiController implements ConversationApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<Conversation>(objectMapper.readValue("{"
-                		+ "\"dateTime\" : \"2000-01-23T04:56:07.000+00:00\",\n" + 
-                		"  \"from_id\" : 11,\n" + 
-                		"  \"to_id\" : 11,\n" + 
-                		"  \"id\" : 11,\n" + 
-                		"  \"object\" : \"This is the object of the conversation\"\n" + 
-                		"}", Conversation.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<Conversation>(objectMapper.readValue("{\n  \"from_id\" : 11,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"to_id\" : 11,\n  \"id\" : 11,\n  \"object\" : \"This is the object of the conversation\"\n}", Conversation.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<Conversation>(HttpStatus.INTERNAL_SERVER_ERROR);

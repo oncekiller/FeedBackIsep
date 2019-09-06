@@ -14,7 +14,7 @@ import javax.validation.constraints.*;
  * Comment
  */
 @Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-01T00:52:54.999Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-06T03:38:36.462Z[GMT]")
 public class Comment   {
   @JsonProperty("id")
   private Long id = null;
@@ -28,7 +28,7 @@ public class Comment   {
   @JsonProperty("content")
   private String content = null;
 
-  @JsonProperty("dateTime")
+  @JsonProperty("date_time")
   private OffsetDateTime dateTime = null;
 
   @JsonProperty("number_like")

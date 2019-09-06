@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-01T00:52:54.999Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-06T03:38:36.462Z[GMT]")
 @Controller
 public class CoursesApiController implements CoursesApi {
 
@@ -46,19 +46,7 @@ public class CoursesApiController implements CoursesApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<List<Course>>(objectMapper.readValue("[ {"
-                		+ "\"dateTime\" : \"2000-01-23T04:56:07.000+00:00\",\n" + 
-                		"  \"duration\" : 60,\n" + 
-                		"  \"teacher_id\" : 11,\n" + 
-                		"  \"material_id\" : 11,\n" + 
-                		"  \"id\" : 11\n" + 
-                		"}, {\n" + 
-                		"  \"dateTime\" : \"2000-01-23T04:56:07.000+00:00\",\n" + 
-                		"  \"duration\" : 60,\n" + 
-                		"  \"teacher_id\" : 11,\n" + 
-                		"  \"material_id\" : 11,\n" + 
-                		"  \"id\" : 11"
-                		+ "} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<List<Course>>(objectMapper.readValue("[ {\n  \"duration\" : 60,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"teacher_id\" : 11,\n  \"material_id\" : 11,\n  \"id\" : 11\n}, {\n  \"duration\" : 60,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"teacher_id\" : 11,\n  \"material_id\" : 11,\n  \"id\" : 11\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<List<Course>>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -72,13 +60,7 @@ public class CoursesApiController implements CoursesApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<Course>(objectMapper.readValue("{"
-                		+ "\"dateTime\" : \"2000-01-23T04:56:07.000+00:00\",\n" + 
-                		"  \"duration\" : 60,\n" + 
-                		"  \"teacher_id\" : 11,\n" + 
-                		"  \"material_id\" : 11,\n" + 
-                		"  \"id\" : 11"
-                		+ "}", Course.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<Course>(objectMapper.readValue("{\n  \"duration\" : 60,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"teacher_id\" : 11,\n  \"material_id\" : 11,\n  \"id\" : 11\n}", Course.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<Course>(HttpStatus.INTERNAL_SERVER_ERROR);

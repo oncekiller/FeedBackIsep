@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: io.swagger.api.CommentApiControllerIntegrationTest
--------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.986 sec - in io.swagger.api.CommentApiControllerIntegrationTest

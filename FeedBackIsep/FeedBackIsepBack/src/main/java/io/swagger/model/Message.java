@@ -14,7 +14,7 @@ import javax.validation.constraints.*;
  * Message
  */
 @Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-01T00:52:54.999Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-06T03:38:36.462Z[GMT]")
 public class Message   {
   @JsonProperty("id")
   private Long id = null;
@@ -28,10 +28,10 @@ public class Message   {
   @JsonProperty("content")
   private String content = null;
 
-  @JsonProperty("read")
-  private Boolean read = null;
+  @JsonProperty("is_read")
+  private Boolean isRead = null;
 
-  @JsonProperty("dateTime")
+  @JsonProperty("date_time")
   private OffsetDateTime dateTime = null;
 
   public Message id(Long id) {
@@ -114,23 +114,24 @@ public class Message   {
     this.content = content;
   }
 
-  public Message read(Boolean read) {
-    this.read = read;
+  public Message isRead(Boolean isRead) {
+    this.isRead = isRead;
     return this;
   }
 
   /**
    * is this message have been read
-   * @return read
+   * @return isRead
   **/
-  @ApiModelProperty(example = "true", value = "is this message have been read")
+  @ApiModelProperty(example = "true", required = true, value = "is this message have been read")
+  @NotNull
 
-  public Boolean isRead() {
-    return read;
+  public Boolean isIsRead() {
+    return isRead;
   }
 
-  public void setRead(Boolean read) {
-    this.read = read;
+  public void setIsRead(Boolean isRead) {
+    this.isRead = isRead;
   }
 
   public Message dateTime(OffsetDateTime dateTime) {
@@ -168,13 +169,13 @@ public class Message   {
         Objects.equals(this.conversationId, message.conversationId) &&
         Objects.equals(this.isFromSender, message.isFromSender) &&
         Objects.equals(this.content, message.content) &&
-        Objects.equals(this.read, message.read) &&
+        Objects.equals(this.isRead, message.isRead) &&
         Objects.equals(this.dateTime, message.dateTime);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, conversationId, isFromSender, content, read, dateTime);
+    return Objects.hash(id, conversationId, isFromSender, content, isRead, dateTime);
   }
 
   @Override
@@ -186,7 +187,7 @@ public class Message   {
     sb.append("    conversationId: ").append(toIndentedString(conversationId)).append("\n");
     sb.append("    isFromSender: ").append(toIndentedString(isFromSender)).append("\n");
     sb.append("    content: ").append(toIndentedString(content)).append("\n");
-    sb.append("    read: ").append(toIndentedString(read)).append("\n");
+    sb.append("    isRead: ").append(toIndentedString(isRead)).append("\n");
     sb.append("    dateTime: ").append(toIndentedString(dateTime)).append("\n");
     sb.append("}");
     return sb.toString();

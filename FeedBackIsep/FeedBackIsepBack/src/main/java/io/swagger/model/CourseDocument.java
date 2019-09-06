@@ -13,10 +13,13 @@ import javax.validation.constraints.*;
  * CourseDocument
  */
 @Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-01T00:52:54.999Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-06T03:38:36.462Z[GMT]")
 public class CourseDocument   {
   @JsonProperty("id")
   private Long id = null;
+
+  @JsonProperty("name")
+  private String name = null;
 
   @JsonProperty("document")
   private String document = null;
@@ -45,6 +48,26 @@ public class CourseDocument   {
 
   public void setId(Long id) {
     this.id = id;
+  }
+
+  public CourseDocument name(String name) {
+    this.name = name;
+    return this;
+  }
+
+  /**
+   * name of the file
+   * @return name
+  **/
+  @ApiModelProperty(example = "documentName", required = true, value = "name of the file")
+  @NotNull
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
   }
 
   public CourseDocument document(String document) {
@@ -117,6 +140,7 @@ public class CourseDocument   {
     }
     CourseDocument courseDocument = (CourseDocument) o;
     return Objects.equals(this.id, courseDocument.id) &&
+        Objects.equals(this.name, courseDocument.name) &&
         Objects.equals(this.document, courseDocument.document) &&
         Objects.equals(this.userPostId, courseDocument.userPostId) &&
         Objects.equals(this.courseId, courseDocument.courseId);
@@ -124,7 +148,7 @@ public class CourseDocument   {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, document, userPostId, courseId);
+    return Objects.hash(id, name, document, userPostId, courseId);
   }
 
   @Override
@@ -133,6 +157,7 @@ public class CourseDocument   {
     sb.append("class CourseDocument {\n");
     
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    document: ").append(toIndentedString(document)).append("\n");
     sb.append("    userPostId: ").append(toIndentedString(userPostId)).append("\n");
     sb.append("    courseId: ").append(toIndentedString(courseId)).append("\n");
