@@ -34,7 +34,7 @@ public interface CommentApi {
     @RequestMapping(value = "/comment",
         consumes = { "application/json" },
         method = RequestMethod.POST)
-    ResponseEntity<Void> addComment(@ApiParam(value = "Comment to add"  )  @Valid @RequestBody Comment body);
+    ResponseEntity<Comment> addComment(@ApiParam(value = "Comment to add"  )  @Valid @RequestBody Comment body);
 
 
     @ApiOperation(value = "Delete a comment", nickname = "deleteComment", notes = "Delete a comment to the dataBase", response = String.class, tags={ "comment", })

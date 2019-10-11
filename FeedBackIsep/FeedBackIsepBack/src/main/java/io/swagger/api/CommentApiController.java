@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -30,6 +31,9 @@ public class CommentApiController implements CommentApi {
     private final ObjectMapper objectMapper;
 
     private final HttpServletRequest request;
+    
+    @Autowired
+    CommentApiDelegate commentApiDelegate;
 
     @org.springframework.beans.factory.annotation.Autowired
     public CommentApiController(ObjectMapper objectMapper, HttpServletRequest request) {
@@ -37,9 +41,8 @@ public class CommentApiController implements CommentApi {
         this.request = request;
     }
 
-    public ResponseEntity<Void> addComment(@ApiParam(value = "Comment to add"  )  @Valid @RequestBody Comment body) {
-        String accept = request.getHeader("Accept");
-        return new ResponseEntity<Void>(HttpStatus.NOT_IMPLEMENTED);
+    public ResponseEntity<Comment> addComment(@ApiParam(value = "Comment to add"  )  @Valid @RequestBody Comment body) {
+        return commentApiDelegate.addCommentImpl(body);
     }
 
     public ResponseEntity<String> deleteComment(@ApiParam(value = "The id that needs to be deleted",required=true) @PathVariable("commentId") String commentId) {
@@ -66,7 +69,12 @@ public class CommentApiController implements CommentApi {
                 return new ResponseEntity<List<Comment>>(HttpStatus.INTERNAL_SERVER_ERROR);
             }
         }
-
+        if(request.getParameter(courseId) != null) {
+        	
+        }
+        if(request.getParameter(userId) != null) {
+        	
+        }
         return new ResponseEntity<List<Comment>>(HttpStatus.NOT_IMPLEMENTED);
     }
 

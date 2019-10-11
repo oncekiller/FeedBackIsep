@@ -24,7 +24,7 @@ public class CommentApiControllerIntegrationTest {
     @Test
     public void addCommentTest() throws Exception {
         Comment body = new Comment();
-        ResponseEntity<Void> responseEntity = api.addComment(body);
+        ResponseEntity<Comment> responseEntity = api.addComment(body);
         assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
     }
 

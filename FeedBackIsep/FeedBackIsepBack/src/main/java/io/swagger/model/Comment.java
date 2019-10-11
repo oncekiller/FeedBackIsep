@@ -1,42 +1,59 @@
 package io.swagger.model;
 
+import java.util.Date;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import org.threeten.bp.OffsetDateTime;
+
 import org.springframework.validation.annotation.Validated;
+
+import javax.persistence.*;
+
 import javax.validation.Valid;
 import javax.validation.constraints.*;
 
 /**
  * Comment
  */
-@Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-06T03:38:36.462Z[GMT]")
+
+@Entity
+@Table(name = "comments")
 public class Comment   {
+	
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name= "id", nullable = false, unique = true)
   @JsonProperty("id")
   private Long id = null;
-
+  
+  @Column(name = "user_id")
   @JsonProperty("user_id")
   private Long userId = null;
-
+  
+  @Column(name = "course_id")
   @JsonProperty("course_id")
   private Long courseId = null;
-
+  
+  @Column(name = "content")
   @JsonProperty("content")
   private String content = null;
-
+  
+  @Temporal(TemporalType.TIMESTAMP)
+  @Column(name = "date_time")
   @JsonProperty("date_time")
-  private OffsetDateTime dateTime = null;
-
+  private Date dateTime = null;
+  
+  @Column(name = "number_like")
   @JsonProperty("number_like")
   private Long numberLike = null;
-
+  
+  @Column(name = "number_dislike")
   @JsonProperty("number_dislike")
   private Long numberDislike = null;
-
+  
+  @Column(name = "parent_id")
   @JsonProperty("parent_id")
   private Long parentId = null;
 
@@ -120,7 +137,7 @@ public class Comment   {
     this.content = content;
   }
 
-  public Comment dateTime(OffsetDateTime dateTime) {
+  public Comment dateTime(Date dateTime) {
     this.dateTime = dateTime;
     return this;
   }
@@ -133,11 +150,11 @@ public class Comment   {
   @NotNull
 
   @Valid
-  public OffsetDateTime getDateTime() {
+  public Date getDateTime() {
     return dateTime;
   }
 
-  public void setDateTime(OffsetDateTime dateTime) {
+  public void setDateTime(Date dateTime) {
     this.dateTime = dateTime;
   }
 
