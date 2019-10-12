@@ -42,68 +42,54 @@ public class CommentApiController implements CommentApi {
     }
 
     public ResponseEntity<Comment> addComment(@ApiParam(value = "Comment to add"  )  @Valid @RequestBody Comment body) {
-        return commentApiDelegate.addCommentImpl(body);
+        String accept = request.getHeader("Accept");
+        if (accept != null && accept.contains("application/json")) {
+            return commentApiDelegate.addCommentImpl(body);
+        }      
+        return new ResponseEntity<Comment>(HttpStatus.BAD_REQUEST);
     }
 
     public ResponseEntity<String> deleteComment(@ApiParam(value = "The id that needs to be deleted",required=true) @PathVariable("commentId") String commentId) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
-            try {
-                return new ResponseEntity<String>(objectMapper.readValue("\"\"", String.class), HttpStatus.NOT_IMPLEMENTED);
-            } catch (IOException e) {
-                log.error("Couldn't serialize response for content type application/json", e);
-                return new ResponseEntity<String>(HttpStatus.INTERNAL_SERVER_ERROR);
-            }
-        }
-
-        return new ResponseEntity<String>(HttpStatus.NOT_IMPLEMENTED);
+            return commentApiDelegate.deleteCommentImpl(commentId);
+        }    
+        return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
     }
 
     public ResponseEntity<List<Comment>> getAllComments(@ApiParam(value = "find all the comments of a user with the id of the user to search") @Valid @RequestParam(value = "userId", required = false) String userId,@ApiParam(value = "find all the comments of a course with the id of the course to search") @Valid @RequestParam(value = "courseId", required = false) String courseId) {
-        String accept = request.getHeader("Accept");
-        if (accept != null && accept.contains("application/json")) {
-            try {
-                return new ResponseEntity<List<Comment>>(objectMapper.readValue("[ {\n  \"course_id\" : 11,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"user_id\" : 11,\n  \"parent_id\" : 11,\n  \"number_like\" : 11,\n  \"id\" : 11,\n  \"number_dislike\" : 11,\n  \"content\" : \"this is the content of a comment\"\n}, {\n  \"course_id\" : 11,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"user_id\" : 11,\n  \"parent_id\" : 11,\n  \"number_like\" : 11,\n  \"id\" : 11,\n  \"number_dislike\" : 11,\n  \"content\" : \"this is the content of a comment\"\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
-            } catch (IOException e) {
-                log.error("Couldn't serialize response for content type application/json", e);
-                return new ResponseEntity<List<Comment>>(HttpStatus.INTERNAL_SERVER_ERROR);
-            }
-        }
-        if(request.getParameter(courseId) != null) {
-        	
-        }
-        if(request.getParameter(userId) != null) {
-        	
-        }
-        return new ResponseEntity<List<Comment>>(HttpStatus.NOT_IMPLEMENTED);
+    	 String accept = request.getHeader("Accept");
+         if (accept != null && accept.contains("application/json")) {
+        	 if(courseId != null && userId == null) {
+        		 return commentApiDelegate.getAllCommentsCourseIdImpl(courseId);
+             }
+        	 if(userId != null && courseId == null) {
+        		 return commentApiDelegate.getAllCommentsUserIdImpl(userId);
+             }
+        	 if(userId != null && courseId != null) {
+        		 return commentApiDelegate.getAllCommentsCourseIdUserIdImpl(courseId,userId);
+        	 }
+        	 if(userId == null && courseId == null) {
+            	 return commentApiDelegate.getAllCommentsImpl();
+        	 }        	 
+         }    	 
+         return new ResponseEntity<List<Comment>>(HttpStatus.BAD_REQUEST);    
     }
 
-    public ResponseEntity<List<Comment>> getCommentId(@ApiParam(value = "Id of the comment to search",required=true) @PathVariable("commentId") String commentId) {
+    public ResponseEntity<Comment> getCommentId(@ApiParam(value = "Id of the comment to search",required=true) @PathVariable("commentId") String commentId) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
-            try {
-                return new ResponseEntity<List<Comment>>(objectMapper.readValue("[ {\n  \"course_id\" : 11,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"user_id\" : 11,\n  \"parent_id\" : 11,\n  \"number_like\" : 11,\n  \"id\" : 11,\n  \"number_dislike\" : 11,\n  \"content\" : \"this is the content of a comment\"\n}, {\n  \"course_id\" : 11,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"user_id\" : 11,\n  \"parent_id\" : 11,\n  \"number_like\" : 11,\n  \"id\" : 11,\n  \"number_dislike\" : 11,\n  \"content\" : \"this is the content of a comment\"\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
-            } catch (IOException e) {
-                log.error("Couldn't serialize response for content type application/json", e);
-                return new ResponseEntity<List<Comment>>(HttpStatus.INTERNAL_SERVER_ERROR);
-            }
+        	return commentApiDelegate.getCommentIdImpl(commentId);
         }
-
-        return new ResponseEntity<List<Comment>>(HttpStatus.NOT_IMPLEMENTED);
+        return new ResponseEntity<Comment>(HttpStatus.BAD_REQUEST);
     }
 
-    public ResponseEntity<Comment> updateComment(@ApiParam(value = "Updated comment object" ,required=true )  @Valid @RequestBody Comment body) {
+    public ResponseEntity<String> updateComment(@ApiParam(value = "Updated comment object" ,required=true )  @Valid @RequestBody Comment body) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
-            try {
-                return new ResponseEntity<Comment>(objectMapper.readValue("{\n  \"course_id\" : 11,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"user_id\" : 11,\n  \"parent_id\" : 11,\n  \"number_like\" : 11,\n  \"id\" : 11,\n  \"number_dislike\" : 11,\n  \"content\" : \"this is the content of a comment\"\n}", Comment.class), HttpStatus.NOT_IMPLEMENTED);
-            } catch (IOException e) {
-                log.error("Couldn't serialize response for content type application/json", e);
-                return new ResponseEntity<Comment>(HttpStatus.INTERNAL_SERVER_ERROR);
-            }
+        	return commentApiDelegate.updateComment(body);
         }
-
-        return new ResponseEntity<Comment>(HttpStatus.NOT_IMPLEMENTED);
+        return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
     }
 
 }

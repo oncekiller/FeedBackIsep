@@ -33,6 +33,7 @@ public interface CommentApi {
         @ApiResponse(code = 409, message = "an existing comment already exists") })
     @RequestMapping(value = "/comment",
         consumes = { "application/json" },
+        produces = { "application/json" },
         method = RequestMethod.POST)
     ResponseEntity<Comment> addComment(@ApiParam(value = "Comment to add"  )  @Valid @RequestBody Comment body);
 
@@ -67,7 +68,7 @@ public interface CommentApi {
     @RequestMapping(value = "/comment/{commentId}",
         produces = { "application/json", "application/xml" }, 
         method = RequestMethod.GET)
-    ResponseEntity<List<Comment>> getCommentId(@ApiParam(value = "Id of the comment to search",required=true) @PathVariable("commentId") String commentId);
+    ResponseEntity<Comment> getCommentId(@ApiParam(value = "Id of the comment to search",required=true) @PathVariable("commentId") String commentId);
 
 
     @ApiOperation(value = "Update an comment", nickname = "updateComment", notes = "Update a comment of the dataBase.", response = Comment.class, tags={ "comment", })
@@ -79,6 +80,6 @@ public interface CommentApi {
         produces = { "application/json", "application/xml" }, 
         consumes = { "application/json" },
         method = RequestMethod.PUT)
-    ResponseEntity<Comment> updateComment(@ApiParam(value = "Updated comment object" ,required=true )  @Valid @RequestBody Comment body);
+    ResponseEntity<String> updateComment(@ApiParam(value = "Updated comment object" ,required=true )  @Valid @RequestBody Comment body);
 
 }

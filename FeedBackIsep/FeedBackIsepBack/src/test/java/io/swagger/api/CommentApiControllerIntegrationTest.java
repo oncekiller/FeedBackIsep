@@ -46,14 +46,14 @@ public class CommentApiControllerIntegrationTest {
     @Test
     public void getCommentIdTest() throws Exception {
         String commentId = "commentId_example";
-        ResponseEntity<List<Comment>> responseEntity = api.getCommentId(commentId);
+        ResponseEntity<Comment> responseEntity = api.getCommentId(commentId);
         assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
     }
 
     @Test
     public void updateCommentTest() throws Exception {
         Comment body = new Comment();
-        ResponseEntity<Comment> responseEntity = api.updateComment(body);
+        ResponseEntity<String> responseEntity = api.updateComment(body);
         assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
     }
 

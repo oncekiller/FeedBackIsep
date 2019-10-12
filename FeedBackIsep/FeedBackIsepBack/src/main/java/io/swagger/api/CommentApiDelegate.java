@@ -25,16 +25,20 @@ public interface CommentApiDelegate {
         return new ResponseEntity<List<Comment>>(HttpStatus.NOT_IMPLEMENTED);
 	}
 	
+	default ResponseEntity<List<Comment>> getAllCommentsCourseIdUserIdImpl(String courseId,String userId){
+        return new ResponseEntity<List<Comment>>(HttpStatus.NOT_IMPLEMENTED);
+	}
+	
 	default ResponseEntity<List<Comment>> getAllCommentsImpl(){
         return new ResponseEntity<List<Comment>>(HttpStatus.NOT_IMPLEMENTED);
 	}
 	
-	default ResponseEntity<List<Comment>> getCommentIdImpl(String commentId){
-        return new ResponseEntity<List<Comment>>(HttpStatus.NOT_IMPLEMENTED);
+	default ResponseEntity<Comment> getCommentIdImpl(String commentId){
+        return new ResponseEntity<Comment>(HttpStatus.NOT_IMPLEMENTED);
 	}
 	
-	default ResponseEntity<Comment> updateComment(Comment comment){
-        return new ResponseEntity<Comment>(HttpStatus.NOT_IMPLEMENTED);
+	default ResponseEntity<String> updateComment(Comment comment){
+        return new ResponseEntity<String>(HttpStatus.NOT_IMPLEMENTED);
 	}
 	
 }
