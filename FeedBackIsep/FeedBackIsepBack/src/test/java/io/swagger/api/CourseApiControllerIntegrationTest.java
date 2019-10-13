@@ -31,7 +31,30 @@ public class CourseApiControllerIntegrationTest {
     @Test
     public void getCourseIdTest() throws Exception {
         String courseId = "courseId_example";
-        ResponseEntity<List<Course>> responseEntity = api.getCourseId(courseId);
+        ResponseEntity<Course> responseEntity = api.getCourseId(courseId);
+        assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
+    }
+    
+    @Test
+    public void addCourseTest() throws Exception {
+        Course body = new Course();
+        ResponseEntity<Course> responseEntity = api.addCourse(body);
+        assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
+    }
+
+    @Test
+    public void getAllCoursesTest() throws Exception {
+        String userId = "userId_example";
+        String teacherId = "teacherId_example";
+        String materialId = "materialId_example";
+        ResponseEntity<List<Course>> responseEntity = api.getAllCourses(userId, teacherId, materialId);
+        assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
+    }
+
+    @Test
+    public void updateCourseTest() throws Exception {
+        Course body = new Course();
+        ResponseEntity<String> responseEntity = api.updateCourse(body);
         assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
     }
 

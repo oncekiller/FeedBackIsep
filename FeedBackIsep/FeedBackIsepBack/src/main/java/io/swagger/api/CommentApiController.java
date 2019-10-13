@@ -87,7 +87,7 @@ public class CommentApiController implements CommentApi {
     public ResponseEntity<String> updateComment(@ApiParam(value = "Updated comment object" ,required=true )  @Valid @RequestBody Comment body) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
-        	return commentApiDelegate.updateComment(body);
+        	return commentApiDelegate.updateCommentImpl(body);
         }
         return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
     }

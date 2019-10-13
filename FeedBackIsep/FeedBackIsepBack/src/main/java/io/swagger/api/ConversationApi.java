@@ -32,9 +32,10 @@ public interface ConversationApi {
         @ApiResponse(code = 400, message = "invalid input, object invalid"),
         @ApiResponse(code = 409, message = "an existing conversation already exists") })
     @RequestMapping(value = "/conversation",
+    	produces = { "application/json" }, 
         consumes = { "application/json" },
         method = RequestMethod.POST)
-    ResponseEntity<Void> addConversation(@ApiParam(value = "conversation to add"  )  @Valid @RequestBody Conversation body);
+    ResponseEntity<Conversation> addConversation(@ApiParam(value = "conversation to add"  )  @Valid @RequestBody Conversation body);
 
 
     @ApiOperation(value = "Delete a conversation", nickname = "deleteConversation", notes = "Delete a conversation to the dataBase", response = String.class, tags={ "conversation", })
@@ -67,7 +68,7 @@ public interface ConversationApi {
     @RequestMapping(value = "/conversation/{conversationId}",
         produces = { "application/json", "application/xml" }, 
         method = RequestMethod.GET)
-    ResponseEntity<List<Conversation>> getConversationId(@ApiParam(value = "Id of the conversation to search",required=true) @PathVariable("conversationId") String conversationId);
+    ResponseEntity<Conversation> getConversationId(@ApiParam(value = "Id of the conversation to search",required=true) @PathVariable("conversationId") String conversationId);
 
 
     @ApiOperation(value = "Update an conversation", nickname = "updateConversation", notes = "Update a conversation of the dataBase.", response = Conversation.class, tags={ "conversation", })
@@ -79,6 +80,6 @@ public interface ConversationApi {
         produces = { "application/json", "application/xml" }, 
         consumes = { "application/json" },
         method = RequestMethod.PUT)
-    ResponseEntity<Conversation> updateConversation(@ApiParam(value = "Updated conversation object" ,required=true )  @Valid @RequestBody Conversation body);
+    ResponseEntity<String> updateConversation(@ApiParam(value = "Updated conversation object" ,required=true )  @Valid @RequestBody Conversation body);
 
 }

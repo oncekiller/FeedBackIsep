@@ -1,33 +1,42 @@
 package io.swagger.model;
 
+import java.util.Date;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import org.threeten.bp.OffsetDateTime;
-import org.springframework.validation.annotation.Validated;
+import org.springframework.validation.annotation.Validated;	
+import javax.persistence.*;
 import javax.validation.Valid;
-import javax.validation.constraints.*;
+import javax.validation.constraints.NotNull;
 
 /**
  * Course
  */
-@Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-06T03:38:36.462Z[GMT]")
+@Entity
+@Table(name = "courses")
 public class Course   {
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name= "id", nullable = false, unique = true)  
   @JsonProperty("id")
   private Long id = null;
-
+  
+  @Column(name = "teacher_id")
   @JsonProperty("teacher_id")
   private Long teacherId = null;
-
+  
+  @Column(name = "material_id")
   @JsonProperty("material_id")
   private Long materialId = null;
-
+  
+  @Column(name = "date_time")
   @JsonProperty("date_time")
-  private OffsetDateTime dateTime = null;
-
+  private Date dateTime = null;
+  
+  @Column(name = "duration")
   @JsonProperty("duration")
   private Integer duration = null;
 
@@ -91,7 +100,7 @@ public class Course   {
     this.materialId = materialId;
   }
 
-  public Course dateTime(OffsetDateTime dateTime) {
+  public Course dateTime(Date dateTime) {
     this.dateTime = dateTime;
     return this;
   }
@@ -104,11 +113,11 @@ public class Course   {
   @NotNull
 
   @Valid
-  public OffsetDateTime getDateTime() {
+  public Date getDateTime() {
     return dateTime;
   }
 
-  public void setDateTime(OffsetDateTime dateTime) {
+  public void setDateTime(Date dateTime) {
     this.dateTime = dateTime;
   }
 

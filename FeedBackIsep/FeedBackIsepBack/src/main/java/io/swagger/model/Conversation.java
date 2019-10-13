@@ -1,5 +1,6 @@
 package io.swagger.model;
 
+import java.util.Date;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -9,27 +10,36 @@ import org.threeten.bp.OffsetDateTime;
 import org.springframework.validation.annotation.Validated;
 import javax.validation.Valid;
 import javax.validation.constraints.*;
+import javax.persistence.*;
 
 /**
  * Conversation
  */
-@Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-06T03:38:36.462Z[GMT]")
+@Entity
+@Table(name = "conversations")
 public class Conversation   {
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name= "id", nullable = false, unique = true)  
   @JsonProperty("id")
   private Long id = null;
-
+  
+  @Column(name = "from_id")
   @JsonProperty("from_id")
   private Long fromId = null;
-
+  
+  @Column(name = "to_id")
   @JsonProperty("to_id")
   private Long toId = null;
-
+  
+  @Column(name = "object")
   @JsonProperty("object")
   private String object = null;
-
+  
+  @Temporal(TemporalType.TIMESTAMP)
+  @Column(name = "date_time")
   @JsonProperty("date_time")
-  private OffsetDateTime dateTime = null;
+  private Date dateTime = null;
 
   public Conversation id(Long id) {
     this.id = id;
@@ -111,7 +121,7 @@ public class Conversation   {
     this.object = object;
   }
 
-  public Conversation dateTime(OffsetDateTime dateTime) {
+  public Conversation dateTime(Date dateTime) {
     this.dateTime = dateTime;
     return this;
   }
@@ -124,11 +134,11 @@ public class Conversation   {
   @NotNull
 
   @Valid
-  public OffsetDateTime getDateTime() {
+  public Date getDateTime() {
     return dateTime;
   }
 
-  public void setDateTime(OffsetDateTime dateTime) {
+  public void setDateTime(Date dateTime) {
     this.dateTime = dateTime;
   }
 

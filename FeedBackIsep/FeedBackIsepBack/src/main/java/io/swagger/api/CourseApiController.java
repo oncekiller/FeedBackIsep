@@ -1,10 +1,12 @@
 package io.swagger.api;
 
+import io.swagger.model.Comment;
 import io.swagger.model.Course;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -30,6 +32,9 @@ public class CourseApiController implements CourseApi {
     private final ObjectMapper objectMapper;
 
     private final HttpServletRequest request;
+    
+    @Autowired
+    CourseApiDelegate courseApiDelegate;
 
     @org.springframework.beans.factory.annotation.Autowired
     public CourseApiController(ObjectMapper objectMapper, HttpServletRequest request) {
@@ -40,29 +45,64 @@ public class CourseApiController implements CourseApi {
     public ResponseEntity<String> deleteCourse(@ApiParam(value = "The id that needs to be deleted",required=true) @PathVariable("courseId") String courseId) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
-            try {
-                return new ResponseEntity<String>(objectMapper.readValue("\"\"", String.class), HttpStatus.NOT_IMPLEMENTED);
-            } catch (IOException e) {
-                log.error("Couldn't serialize response for content type application/json", e);
-                return new ResponseEntity<String>(HttpStatus.INTERNAL_SERVER_ERROR);
-            }
-        }
-
-        return new ResponseEntity<String>(HttpStatus.NOT_IMPLEMENTED);
+            return courseApiDelegate.deleteCourseImpl(courseId);
+        }    
+        return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
     }
 
-    public ResponseEntity<List<Course>> getCourseId(@ApiParam(value = "Id of the course to search",required=true) @PathVariable("courseId") String courseId) {
+    public ResponseEntity<Course> getCourseId(@ApiParam(value = "Id of the course to search",required=true) @PathVariable("courseId") String courseId) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
-            try {
-                return new ResponseEntity<List<Course>>(objectMapper.readValue("[ {\n  \"duration\" : 60,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"teacher_id\" : 11,\n  \"material_id\" : 11,\n  \"id\" : 11\n}, {\n  \"duration\" : 60,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"teacher_id\" : 11,\n  \"material_id\" : 11,\n  \"id\" : 11\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
-            } catch (IOException e) {
-                log.error("Couldn't serialize response for content type application/json", e);
-                return new ResponseEntity<List<Course>>(HttpStatus.INTERNAL_SERVER_ERROR);
-            }
+        	return courseApiDelegate.getCourseIdImpl(courseId);
         }
+        return new ResponseEntity<Course>(HttpStatus.BAD_REQUEST);
+    }
+    
+    public ResponseEntity<Course> addCourse(@ApiParam(value = "Course to add"  )  @Valid @RequestBody Course body) {
+        String accept = request.getHeader("Accept");
+        if (accept != null && accept.contains("application/json")) {
+            return courseApiDelegate.addCourseImpl(body);
+        }      
+        return new ResponseEntity<Course>(HttpStatus.BAD_REQUEST);
+    }
 
-        return new ResponseEntity<List<Course>>(HttpStatus.NOT_IMPLEMENTED);
+    public ResponseEntity<List<Course>> getAllCourses(@ApiParam(value = "Find all the courses of the users with his Id") @Valid @RequestParam(value = "userId", required = false) String userId,@ApiParam(value = "Find all the courses of the teacher with his Id") @Valid @RequestParam(value = "teacherId", required = false) String teacherId,@ApiParam(value = "Find all the courses of a specific material with its id") @Valid @RequestParam(value = "materialId", required = false) String materialId) {
+      	 String accept = request.getHeader("Accept");
+         if (accept != null && accept.contains("application/json")) {
+        	 if(userId != null && teacherId == null && materialId == null) {
+        		 return courseApiDelegate.getAllCoursesUserIdImpl(userId);
+             }
+        	 if(userId == null && teacherId != null && materialId == null) {
+        		 return courseApiDelegate.getAllCoursesTeacherIdImpl(teacherId);
+             }
+        	 if(userId == null && teacherId == null && materialId != null) {
+        		 return courseApiDelegate.getAllCoursesMaterialIdImpl(materialId);
+             }
+        	 if(userId != null && teacherId != null && materialId == null) {
+        		 return courseApiDelegate.getAllCoursesTeacherIdUserIdImpl(teacherId, userId);
+             }
+        	 if(userId == null && teacherId != null && materialId != null) {
+        		 return courseApiDelegate.getAllCoursesTeacherIdMaterialIdImpl(teacherId, materialId);
+             }
+        	 if(userId != null && teacherId == null && materialId != null) {
+        		 return courseApiDelegate.getAllCoursesMaterialIdUserIdImpl(materialId, userId);
+             }
+        	 if(userId != null && teacherId != null && materialId != null) {
+        		 return courseApiDelegate.getAllCoursesMaterialIdUserIdTeacherIdImpl(materialId, userId, teacherId);
+             }
+        	 if(userId == null && teacherId == null && materialId == null) {
+        		 return courseApiDelegate.getAllCoursesImpl();
+             }
+         }    	 
+         return new ResponseEntity<List<Course>>(HttpStatus.BAD_REQUEST);    
+    }
+
+    public ResponseEntity<String> updateCourse(@ApiParam(value = "Updated course object" ,required=true )  @Valid @RequestBody Course body) {
+        String accept = request.getHeader("Accept");
+        if (accept != null && accept.contains("application/json")) {
+        	return courseApiDelegate.updateCourseImpl(body);
+        }
+        return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
     }
 
 }

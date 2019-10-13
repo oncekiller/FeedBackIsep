@@ -37,7 +37,7 @@ public interface CommentApiDelegate {
         return new ResponseEntity<Comment>(HttpStatus.NOT_IMPLEMENTED);
 	}
 	
-	default ResponseEntity<String> updateComment(Comment comment){
+	default ResponseEntity<String> updateCommentImpl(Comment comment){
         return new ResponseEntity<String>(HttpStatus.NOT_IMPLEMENTED);
 	}
 	

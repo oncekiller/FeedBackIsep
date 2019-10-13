@@ -126,7 +126,7 @@ public class CommentApiImpl implements CommentApiDelegate {
 	}
 
 	@Override
-	public ResponseEntity<String> updateComment(Comment comment) {
+	public ResponseEntity<String> updateCommentImpl(Comment comment) {
 		// Update a comment
 		try {
 			if(commentRepo.exists(comment.getId())){

@@ -24,7 +24,7 @@ public class ConversationApiControllerIntegrationTest {
     @Test
     public void addConversationTest() throws Exception {
         Conversation body = new Conversation();
-        ResponseEntity<Void> responseEntity = api.addConversation(body);
+        ResponseEntity<Conversation> responseEntity = api.addConversation(body);
         assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
     }
 
@@ -45,14 +45,14 @@ public class ConversationApiControllerIntegrationTest {
     @Test
     public void getConversationIdTest() throws Exception {
         String conversationId = "conversationId_example";
-        ResponseEntity<List<Conversation>> responseEntity = api.getConversationId(conversationId);
+        ResponseEntity<Conversation> responseEntity = api.getConversationId(conversationId);
         assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
     }
 
     @Test
     public void updateConversationTest() throws Exception {
         Conversation body = new Conversation();
-        ResponseEntity<Conversation> responseEntity = api.updateConversation(body);
+        ResponseEntity<String> responseEntity = api.updateConversation(body);
         assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
     }
 

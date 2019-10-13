@@ -1,10 +1,12 @@
 package io.swagger.api;
 
+import io.swagger.model.Comment;
 import io.swagger.model.Conversation;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -30,6 +32,9 @@ public class ConversationApiController implements ConversationApi {
     private final ObjectMapper objectMapper;
 
     private final HttpServletRequest request;
+    
+    @Autowired
+    ConversationApiDelegate conversationApiDelegate;
 
     @org.springframework.beans.factory.annotation.Autowired
     public ConversationApiController(ObjectMapper objectMapper, HttpServletRequest request) {
@@ -37,65 +42,49 @@ public class ConversationApiController implements ConversationApi {
         this.request = request;
     }
 
-    public ResponseEntity<Void> addConversation(@ApiParam(value = "conversation to add"  )  @Valid @RequestBody Conversation body) {
+    public ResponseEntity<Conversation> addConversation(@ApiParam(value = "conversation to add"  )  @Valid @RequestBody Conversation body) {
         String accept = request.getHeader("Accept");
-        return new ResponseEntity<Void>(HttpStatus.NOT_IMPLEMENTED);
+        if (accept != null && accept.contains("application/json")) {
+            return conversationApiDelegate.addConversationImpl(body);
+        }      
+        return new ResponseEntity<Conversation>(HttpStatus.BAD_REQUEST);
     }
 
     public ResponseEntity<String> deleteConversation(@ApiParam(value = "The id that needs to be deleted",required=true) @PathVariable("conversationId") String conversationId) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
-            try {
-                return new ResponseEntity<String>(objectMapper.readValue("\"\"", String.class), HttpStatus.NOT_IMPLEMENTED);
-            } catch (IOException e) {
-                log.error("Couldn't serialize response for content type application/json", e);
-                return new ResponseEntity<String>(HttpStatus.INTERNAL_SERVER_ERROR);
-            }
-        }
-
-        return new ResponseEntity<String>(HttpStatus.NOT_IMPLEMENTED);
+            return conversationApiDelegate.deleteConversationImpl(conversationId);
+        }    
+        return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
     }
 
     public ResponseEntity<List<Conversation>> getAllConversations(@ApiParam(value = "find all the conversations of a user with the id of the user to search") @Valid @RequestParam(value = "userId", required = false) String userId) {
-        String accept = request.getHeader("Accept");
-        if (accept != null && accept.contains("application/json")) {
-            try {
-                return new ResponseEntity<List<Conversation>>(objectMapper.readValue("[ {\n  \"from_id\" : 11,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"to_id\" : 11,\n  \"id\" : 11,\n  \"object\" : \"This is the object of the conversation\"\n}, {\n  \"from_id\" : 11,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"to_id\" : 11,\n  \"id\" : 11,\n  \"object\" : \"This is the object of the conversation\"\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
-            } catch (IOException e) {
-                log.error("Couldn't serialize response for content type application/json", e);
-                return new ResponseEntity<List<Conversation>>(HttpStatus.INTERNAL_SERVER_ERROR);
-            }
-        }
-
-        return new ResponseEntity<List<Conversation>>(HttpStatus.NOT_IMPLEMENTED);
+   	 String accept = request.getHeader("Accept");
+     if (accept != null && accept.contains("application/json")) {
+    	 if(userId != null) {
+    		 return conversationApiDelegate.getAllConversationsUserIdImpl(userId);
+         }
+    	 if(userId == null) {
+        	 return conversationApiDelegate.getAllConversationsImpl();
+    	 }        	 
+     }    	 
+     return new ResponseEntity<List<Conversation>>(HttpStatus.BAD_REQUEST);    
     }
 
-    public ResponseEntity<List<Conversation>> getConversationId(@ApiParam(value = "Id of the conversation to search",required=true) @PathVariable("conversationId") String conversationId) {
+    public ResponseEntity<Conversation> getConversationId(@ApiParam(value = "Id of the conversation to search",required=true) @PathVariable("conversationId") String conversationId) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
-            try {
-                return new ResponseEntity<List<Conversation>>(objectMapper.readValue("[ {\n  \"from_id\" : 11,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"to_id\" : 11,\n  \"id\" : 11,\n  \"object\" : \"This is the object of the conversation\"\n}, {\n  \"from_id\" : 11,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"to_id\" : 11,\n  \"id\" : 11,\n  \"object\" : \"This is the object of the conversation\"\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
-            } catch (IOException e) {
-                log.error("Couldn't serialize response for content type application/json", e);
-                return new ResponseEntity<List<Conversation>>(HttpStatus.INTERNAL_SERVER_ERROR);
-            }
+        	return conversationApiDelegate.getConversationIdImpl(conversationId);
         }
-
-        return new ResponseEntity<List<Conversation>>(HttpStatus.NOT_IMPLEMENTED);
+        return new ResponseEntity<Conversation>(HttpStatus.BAD_REQUEST);
     }
 
-    public ResponseEntity<Conversation> updateConversation(@ApiParam(value = "Updated conversation object" ,required=true )  @Valid @RequestBody Conversation body) {
+    public ResponseEntity<String> updateConversation(@ApiParam(value = "Updated conversation object" ,required=true )  @Valid @RequestBody Conversation body) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
-            try {
-                return new ResponseEntity<Conversation>(objectMapper.readValue("{\n  \"from_id\" : 11,\n  \"date_time\" : \"2000-01-23T04:56:07.000+00:00\",\n  \"to_id\" : 11,\n  \"id\" : 11,\n  \"object\" : \"This is the object of the conversation\"\n}", Conversation.class), HttpStatus.NOT_IMPLEMENTED);
-            } catch (IOException e) {
-                log.error("Couldn't serialize response for content type application/json", e);
-                return new ResponseEntity<Conversation>(HttpStatus.INTERNAL_SERVER_ERROR);
-            }
+        	return conversationApiDelegate.updateConversationImpl(body);
         }
-
-        return new ResponseEntity<Conversation>(HttpStatus.NOT_IMPLEMENTED);
+        return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
     }
 
 }

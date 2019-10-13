@@ -45,6 +45,40 @@ public interface CourseApi {
     @RequestMapping(value = "/course/{courseId}",
         produces = { "application/json", "application/xml" }, 
         method = RequestMethod.GET)
-    ResponseEntity<List<Course>> getCourseId(@ApiParam(value = "Id of the course to search",required=true) @PathVariable("courseId") String courseId);
+    ResponseEntity<Course> getCourseId(@ApiParam(value = "Id of the course to search",required=true) @PathVariable("courseId") String courseId);
+    
+    @ApiOperation(value = "Adds a course", nickname = "addCourse", notes = "Add a course to the dataBase", tags={ "course", })
+    @ApiResponses(value = { 
+        @ApiResponse(code = 201, message = "course created"),
+        @ApiResponse(code = 400, message = "invalid input, object invalid"),
+        @ApiResponse(code = 409, message = "an existing course already exists") })
+    @RequestMapping(value = "/course",
+    	produces = { "application/json"},
+        consumes = { "application/json" },
+        method = RequestMethod.POST)
+    ResponseEntity<Course> addCourse(@ApiParam(value = "Course to add"  )  @Valid @RequestBody Course body);
+
+
+    @ApiOperation(value = "get all courses", nickname = "getAllCourses", notes = "Get courses from the dataBase ", response = Course.class, responseContainer = "List", tags={ "course", })
+    @ApiResponses(value = { 
+        @ApiResponse(code = 200, message = "search results matching criteria", response = Course.class, responseContainer = "List"),
+        @ApiResponse(code = 400, message = "Invalid parameter supplied"),
+        @ApiResponse(code = 404, message = "Course not found") })
+    @RequestMapping(value = "/course",
+        produces = { "application/json", "application/xml" }, 
+        method = RequestMethod.GET)
+    ResponseEntity<List<Course>> getAllCourses(@ApiParam(value = "Find all the courses of the users with his Id") @Valid @RequestParam(value = "userId", required = false) String userId,@ApiParam(value = "Find all the courses of the teacher with his Id") @Valid @RequestParam(value = "teacherId", required = false) String teacherId,@ApiParam(value = "Find all the courses of a specific material with its id") @Valid @RequestParam(value = "materialId", required = false) String materialId);
+
+
+    @ApiOperation(value = "Update a course", nickname = "updateCourse", notes = "update a specific course.", response = Course.class, tags={ "course", })
+    @ApiResponses(value = { 
+        @ApiResponse(code = 200, message = "successful operation", response = Course.class),
+        @ApiResponse(code = 400, message = "Invalid course supplied"),
+        @ApiResponse(code = 404, message = "Course not found") })
+    @RequestMapping(value = "/course",
+        produces = { "application/json", "application/xml" }, 
+        consumes = { "application/json" },
+        method = RequestMethod.PUT)
+    ResponseEntity<String> updateCourse(@ApiParam(value = "Updated course object" ,required=true )  @Valid @RequestBody Course body);
 
 }
