@@ -1,10 +1,12 @@
 package io.swagger.api;
 
+import io.swagger.model.Comment;
 import io.swagger.model.UserCourse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -30,6 +32,9 @@ public class UserCourseApiController implements UserCourseApi {
     private final ObjectMapper objectMapper;
 
     private final HttpServletRequest request;
+    
+    @Autowired
+    UserCourseApiDelegate userCourseApiDelegate;
 
     @org.springframework.beans.factory.annotation.Autowired
     public UserCourseApiController(ObjectMapper objectMapper, HttpServletRequest request) {
@@ -37,65 +42,55 @@ public class UserCourseApiController implements UserCourseApi {
         this.request = request;
     }
 
-    public ResponseEntity<Void> addUserCourse(@ApiParam(value = "userCourse to add"  )  @Valid @RequestBody UserCourse body) {
+    public ResponseEntity<UserCourse> addUserCourse(@ApiParam(value = "userCourse to add"  )  @Valid @RequestBody UserCourse body) {
         String accept = request.getHeader("Accept");
-        return new ResponseEntity<Void>(HttpStatus.NOT_IMPLEMENTED);
+        if (accept != null && accept.contains("application/json")) {
+            return userCourseApiDelegate.addUserCourseImpl(body);
+        }      
+        return new ResponseEntity<UserCourse>(HttpStatus.BAD_REQUEST);
     }
 
     public ResponseEntity<String> deleteUserCourse(@ApiParam(value = "The id that needs to be deleted",required=true) @PathVariable("userCourseId") String userCourseId) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
-            try {
-                return new ResponseEntity<String>(objectMapper.readValue("\"\"", String.class), HttpStatus.NOT_IMPLEMENTED);
-            } catch (IOException e) {
-                log.error("Couldn't serialize response for content type application/json", e);
-                return new ResponseEntity<String>(HttpStatus.INTERNAL_SERVER_ERROR);
-            }
-        }
-
-        return new ResponseEntity<String>(HttpStatus.NOT_IMPLEMENTED);
+            return userCourseApiDelegate.deleteUserCourseImpl(userCourseId);
+        }    
+        return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
     }
 
     public ResponseEntity<List<UserCourse>> getAllUserCourse(@ApiParam(value = "find all the userCourse of a user with the id of the user to search") @Valid @RequestParam(value = "userId", required = false) String userId,@ApiParam(value = "find all the userCourse of a course with the id of the course to search") @Valid @RequestParam(value = "courseId", required = false) String courseId) {
-        String accept = request.getHeader("Accept");
-        if (accept != null && accept.contains("application/json")) {
-            try {
-                return new ResponseEntity<List<UserCourse>>(objectMapper.readValue("[ {\n  \"course_id\" : \"11\",\n  \"user_id\" : \"11\",\n  \"id\" : 11\n}, {\n  \"course_id\" : \"11\",\n  \"user_id\" : \"11\",\n  \"id\" : 11\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
-            } catch (IOException e) {
-                log.error("Couldn't serialize response for content type application/json", e);
-                return new ResponseEntity<List<UserCourse>>(HttpStatus.INTERNAL_SERVER_ERROR);
-            }
-        }
-
-        return new ResponseEntity<List<UserCourse>>(HttpStatus.NOT_IMPLEMENTED);
+   	 String accept = request.getHeader("Accept");
+     if (accept != null && accept.contains("application/json")) {
+    	 if(courseId != null && userId == null) {
+    		 return userCourseApiDelegate.getAllUserCourseCourseIdImpl(courseId);
+         }
+    	 if(userId != null && courseId == null) {
+    		 return userCourseApiDelegate.getAllUserCourseUserIdImpl(userId);
+         }
+    	 if(userId != null && courseId != null) {
+    		 return userCourseApiDelegate.getAllUserCourseCourseIdUserIdImpl(courseId,userId);
+    	 }
+    	 if(userId == null && courseId == null) {
+        	 return userCourseApiDelegate.getAllUserCourseImpl();
+    	 }        	 
+     }    	 
+     return new ResponseEntity<List<UserCourse>>(HttpStatus.BAD_REQUEST);    
     }
 
-    public ResponseEntity<List<UserCourse>> getUserCourseId(@ApiParam(value = "Id of the userCourse to search",required=true) @PathVariable("userCourseId") String userCourseId) {
+    public ResponseEntity<UserCourse> getUserCourseId(@ApiParam(value = "Id of the userCourse to search",required=true) @PathVariable("userCourseId") String userCourseId) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
-            try {
-                return new ResponseEntity<List<UserCourse>>(objectMapper.readValue("[ {\n  \"course_id\" : \"11\",\n  \"user_id\" : \"11\",\n  \"id\" : 11\n}, {\n  \"course_id\" : \"11\",\n  \"user_id\" : \"11\",\n  \"id\" : 11\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
-            } catch (IOException e) {
-                log.error("Couldn't serialize response for content type application/json", e);
-                return new ResponseEntity<List<UserCourse>>(HttpStatus.INTERNAL_SERVER_ERROR);
-            }
+        	return userCourseApiDelegate.getUserCourseIdImpl(userCourseId);
         }
-
-        return new ResponseEntity<List<UserCourse>>(HttpStatus.NOT_IMPLEMENTED);
+        return new ResponseEntity<UserCourse>(HttpStatus.BAD_REQUEST);
     }
 
-    public ResponseEntity<UserCourse> updateUserCourse(@ApiParam(value = "Updated userCourse object" ,required=true )  @Valid @RequestBody UserCourse body) {
+    public ResponseEntity<String> updateUserCourse(@ApiParam(value = "Updated userCourse object" ,required=true )  @Valid @RequestBody UserCourse body) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
-            try {
-                return new ResponseEntity<UserCourse>(objectMapper.readValue("{\n  \"course_id\" : \"11\",\n  \"user_id\" : \"11\",\n  \"id\" : 11\n}", UserCourse.class), HttpStatus.NOT_IMPLEMENTED);
-            } catch (IOException e) {
-                log.error("Couldn't serialize response for content type application/json", e);
-                return new ResponseEntity<UserCourse>(HttpStatus.INTERNAL_SERVER_ERROR);
-            }
+        	return userCourseApiDelegate.updateUserCourseImpl(body);
         }
-
-        return new ResponseEntity<UserCourse>(HttpStatus.NOT_IMPLEMENTED);
+        return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
     }
 
 }

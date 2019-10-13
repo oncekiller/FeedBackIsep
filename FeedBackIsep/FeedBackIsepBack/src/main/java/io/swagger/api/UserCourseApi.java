@@ -33,8 +33,9 @@ public interface UserCourseApi {
         @ApiResponse(code = 409, message = "an existing userCourse already exists") })
     @RequestMapping(value = "/userCourse",
         consumes = { "application/json" },
+        produces = { "application/json" },
         method = RequestMethod.POST)
-    ResponseEntity<Void> addUserCourse(@ApiParam(value = "userCourse to add"  )  @Valid @RequestBody UserCourse body);
+    ResponseEntity<UserCourse> addUserCourse(@ApiParam(value = "userCourse to add"  )  @Valid @RequestBody UserCourse body);
 
 
     @ApiOperation(value = "Delete a userCourse", nickname = "deleteUserCourse", notes = "Delete a userCourse to the dataBase", response = String.class, tags={ "userCourse", })
@@ -67,7 +68,7 @@ public interface UserCourseApi {
     @RequestMapping(value = "/userCourse/{userCourseId}",
         produces = { "application/json", "application/xml" }, 
         method = RequestMethod.GET)
-    ResponseEntity<List<UserCourse>> getUserCourseId(@ApiParam(value = "Id of the userCourse to search",required=true) @PathVariable("userCourseId") String userCourseId);
+    ResponseEntity<UserCourse> getUserCourseId(@ApiParam(value = "Id of the userCourse to search",required=true) @PathVariable("userCourseId") String userCourseId);
 
 
     @ApiOperation(value = "Update an userCourse", nickname = "updateUserCourse", notes = "Update a userCourse of the dataBase.", response = UserCourse.class, tags={ "userCourse", })
@@ -79,6 +80,6 @@ public interface UserCourseApi {
         produces = { "application/json", "application/xml" }, 
         consumes = { "application/json" },
         method = RequestMethod.PUT)
-    ResponseEntity<UserCourse> updateUserCourse(@ApiParam(value = "Updated userCourse object" ,required=true )  @Valid @RequestBody UserCourse body);
+    ResponseEntity<String> updateUserCourse(@ApiParam(value = "Updated userCourse object" ,required=true )  @Valid @RequestBody UserCourse body);
 
 }

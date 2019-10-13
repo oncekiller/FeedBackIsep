@@ -10,9 +10,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import io.swagger.model.Comment;
 import io.swagger.model.Course;
+import io.swagger.model.UserCourse;
 import io.swagger.repository.CourseRepo;
+import io.swagger.repository.UserCourseRepo;
 
 @Service
 public class CourseApiImpl implements CourseApiDelegate{
@@ -20,6 +21,9 @@ public class CourseApiImpl implements CourseApiDelegate{
 	private static final Logger log = LoggerFactory.getLogger(CourseApiController.class);
 	@Autowired
 	CourseRepo courseRepo;
+	
+	@Autowired
+	UserCourseRepo userCourseRepo;
 
 	@Override
 	public ResponseEntity<Course> addCourseImpl(Course course) {
@@ -51,20 +55,31 @@ public class CourseApiImpl implements CourseApiDelegate{
 
 	@Override
 	public ResponseEntity<List<Course>> getAllCoursesUserIdImpl(String userId) {
-		/*// Get all the courses from a user
+		// Get all the courses from a user
 		try {
 			ArrayList<Course> listCourse = new ArrayList<Course>();
-			for(int i = 0; i<courseRepo.findAll().size(); i++) {
-				if (courseRepo.findAll().get(i).getUserId() == Long.parseLong(userId)) {
-					listComment.add(commentRepo.findAll().get(i));
+			ArrayList<UserCourse> listUserCourse = new ArrayList<UserCourse>();
+			
+			//find all userCourses with userId
+			for(int i = 0; i<userCourseRepo.findAll().size(); i++) {
+				if (userCourseRepo.findAll().get(i).getUserId() == Long.parseLong(userId)) {
+					listUserCourse.add(userCourseRepo.findAll().get(i));
 				}
 			}
-		 	return new ResponseEntity<List<Comment>>(listComment ,HttpStatus.OK);
+			
+			//find all courses with an id in listUserCourses
+			for(int i = 0; i<courseRepo.findAll().size(); i++) {
+				for(UserCourse userCourse : listUserCourse) {
+					if(courseRepo.findAll().get(i).getId() == userCourse.getCourseId()) {
+						listCourse.add(courseRepo.findAll().get(i));
+					}
+				}
+			}
+		 	return new ResponseEntity<List<Course>>(listCourse ,HttpStatus.OK);
 		}catch(Error e) {
             log.error("Couldn't serialize response for content type application/json", e);
-            return new ResponseEntity<List<Comment>>(HttpStatus.INTERNAL_SERVER_ERROR);
-		}*/
-		return null;
+            return new ResponseEntity<List<Course>>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 	}
 
 	@Override
@@ -103,20 +118,31 @@ public class CourseApiImpl implements CourseApiDelegate{
 
 	@Override
 	public ResponseEntity<List<Course>> getAllCoursesTeacherIdUserIdImpl(String teacherId, String userId) {
-		/*// Get all the courses of a user with a specific teacher
+		// Get all the courses of a user with a specific teacher
 		try {
-			ArrayList<Comment> listComment = new ArrayList<Comment>();
-			for(int i = 0; i<commentRepo.findAll().size(); i++) {
-				if (commentRepo.findAll().get(i).getCourseId() == Long.parseLong(courseId) && commentRepo.findAll().get(i).getUserId() == Long.parseLong(userId)) {
-					listComment.add(commentRepo.findAll().get(i));
+			ArrayList<Course> listCourse = new ArrayList<Course>();
+			ArrayList<UserCourse> listUserCourse = new ArrayList<UserCourse>();
+			
+			//find all userCourses with userId
+			for(int i = 0; i<userCourseRepo.findAll().size(); i++) {
+				if (userCourseRepo.findAll().get(i).getUserId() == Long.parseLong(userId)) {
+					listUserCourse.add(userCourseRepo.findAll().get(i));
 				}
 			}
-			return new ResponseEntity<List<Comment>>(listComment ,HttpStatus.OK);
+			
+			//find all courses with an id in listUserCourses and with a specific teacher
+			for(int i = 0; i<courseRepo.findAll().size(); i++) {
+				for(UserCourse userCourse : listUserCourse) {
+					if(courseRepo.findAll().get(i).getId() == userCourse.getCourseId() && courseRepo.findAll().get(i).getTeacherId() == Long.parseLong(teacherId)) {
+						listCourse.add(courseRepo.findAll().get(i));
+					}
+				}
+			}
+			return new ResponseEntity<List<Course>>(listCourse ,HttpStatus.OK);
 		}catch(Error e) {
             log.error("Couldn't serialize response for content type application/json", e);
-            return new ResponseEntity<List<Comment>>(HttpStatus.INTERNAL_SERVER_ERROR);
-		}*/
-		return null;
+            return new ResponseEntity<List<Course>>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 	}
 
 	@Override
@@ -144,20 +170,31 @@ public class CourseApiImpl implements CourseApiDelegate{
 
 	@Override
 	public ResponseEntity<List<Course>> getAllCoursesMaterialIdUserIdTeacherIdImpl(String materialId, String userId, String teacherId) {
-		/*// Get all the courses of a user with a specific teacher and a specific material
+		// Get all the courses of a user with a specific teacher and material
 		try {
 			ArrayList<Course> listCourse = new ArrayList<Course>();
-			for(int i = 0; i<commentRepo.findAll().size(); i++) {
-				if (commentRepo.findAll().get(i).getCourseId() == Long.parseLong(courseId) && commentRepo.findAll().get(i).getUserId() == Long.parseLong(userId)) {
-					listComment.add(commentRepo.findAll().get(i));
+			ArrayList<UserCourse> listUserCourse = new ArrayList<UserCourse>();
+			
+			//find all userCourses with userId
+			for(int i = 0; i<userCourseRepo.findAll().size(); i++) {
+				if (userCourseRepo.findAll().get(i).getUserId() == Long.parseLong(userId)) {
+					listUserCourse.add(userCourseRepo.findAll().get(i));
 				}
 			}
-			return new ResponseEntity<List<Comment>>(listComment ,HttpStatus.OK);
+			
+			//find all courses with an id in listUserCourses and with a specific teacher
+			for(int i = 0; i<courseRepo.findAll().size(); i++) {
+				for(UserCourse userCourse : listUserCourse) {
+					if(courseRepo.findAll().get(i).getId() == userCourse.getCourseId() && courseRepo.findAll().get(i).getTeacherId() == Long.parseLong(teacherId) && courseRepo.findAll().get(i).getMaterialId() == Long.parseLong(materialId)) {
+						listCourse.add(courseRepo.findAll().get(i));
+					}
+				}
+			}
+			return new ResponseEntity<List<Course>>(listCourse ,HttpStatus.OK);
 		}catch(Error e) {
             log.error("Couldn't serialize response for content type application/json", e);
-            return new ResponseEntity<List<Comment>>(HttpStatus.INTERNAL_SERVER_ERROR);
-		}*/
-		return null;
+            return new ResponseEntity<List<Course>>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 	}
 
 	@Override

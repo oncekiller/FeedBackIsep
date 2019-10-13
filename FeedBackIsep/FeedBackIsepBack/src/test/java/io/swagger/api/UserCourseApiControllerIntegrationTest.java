@@ -24,7 +24,7 @@ public class UserCourseApiControllerIntegrationTest {
     @Test
     public void addUserCourseTest() throws Exception {
         UserCourse body = new UserCourse();
-        ResponseEntity<Void> responseEntity = api.addUserCourse(body);
+        ResponseEntity<UserCourse> responseEntity = api.addUserCourse(body);
         assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
     }
 
@@ -46,14 +46,14 @@ public class UserCourseApiControllerIntegrationTest {
     @Test
     public void getUserCourseIdTest() throws Exception {
         String userCourseId = "userCourseId_example";
-        ResponseEntity<List<UserCourse>> responseEntity = api.getUserCourseId(userCourseId);
+        ResponseEntity<UserCourse> responseEntity = api.getUserCourseId(userCourseId);
         assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
     }
 
     @Test
     public void updateUserCourseTest() throws Exception {
         UserCourse body = new UserCourse();
-        ResponseEntity<UserCourse> responseEntity = api.updateUserCourse(body);
+        ResponseEntity<String> responseEntity = api.updateUserCourse(body);
         assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
     }
 

@@ -6,23 +6,35 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import org.springframework.validation.annotation.Validated;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.Valid;
 import javax.validation.constraints.*;
 
 /**
  * UserCourse
  */
-@Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-06T03:38:36.462Z[GMT]")
+@Entity
+@Table(name = "user_courses")
 public class UserCourse   {
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name= "id", nullable = false, unique = true)
   @JsonProperty("id")
   private Long id = null;
-
+  
+  @Column(name = "user_id")
   @JsonProperty("user_id")
-  private String userId = null;
-
+  private Long userId = null;
+  
+  @Column(name = "course_id")
   @JsonProperty("course_id")
-  private String courseId = null;
+  private Long courseId = null;
 
   public UserCourse id(Long id) {
     this.id = id;
@@ -44,7 +56,7 @@ public class UserCourse   {
     this.id = id;
   }
 
-  public UserCourse userId(String userId) {
+  public UserCourse userId(Long userId) {
     this.userId = userId;
     return this;
   }
@@ -56,15 +68,15 @@ public class UserCourse   {
   @ApiModelProperty(example = "11", required = true, value = "")
   @NotNull
 
-  public String getUserId() {
+  public Long getUserId() {
     return userId;
   }
 
-  public void setUserId(String userId) {
+  public void setUserId(Long userId) {
     this.userId = userId;
   }
 
-  public UserCourse courseId(String courseId) {
+  public UserCourse courseId(Long courseId) {
     this.courseId = courseId;
     return this;
   }
@@ -76,11 +88,11 @@ public class UserCourse   {
   @ApiModelProperty(example = "11", required = true, value = "")
   @NotNull
 
-  public String getCourseId() {
+  public Long getCourseId() {
     return courseId;
   }
 
-  public void setCourseId(String courseId) {
+  public void setCourseId(Long courseId) {
     this.courseId = courseId;
   }
 
