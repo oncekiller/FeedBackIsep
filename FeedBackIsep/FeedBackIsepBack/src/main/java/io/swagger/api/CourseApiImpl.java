@@ -164,8 +164,31 @@ public class CourseApiImpl implements CourseApiDelegate{
 
 	@Override
 	public ResponseEntity<List<Course>> getAllCoursesMaterialIdUserIdImpl(String materialId, String userId) {
-		// TODO Auto-generated method stub
-		return CourseApiDelegate.super.getAllCoursesMaterialIdUserIdImpl(materialId, userId);
+		// Get all the courses of a user with a specific material
+		try {
+			ArrayList<Course> listCourse = new ArrayList<Course>();
+			ArrayList<UserCourse> listUserCourse = new ArrayList<UserCourse>();
+			
+			//find all userCourses with userId
+			for(int i = 0; i<userCourseRepo.findAll().size(); i++) {
+				if (userCourseRepo.findAll().get(i).getUserId() == Long.parseLong(userId)) {
+					listUserCourse.add(userCourseRepo.findAll().get(i));
+				}
+			}
+			
+			//find all courses with an id in listUserCourses and with a specific teacher
+			for(int i = 0; i<courseRepo.findAll().size(); i++) {
+				for(UserCourse userCourse : listUserCourse) {
+					if(courseRepo.findAll().get(i).getId() == userCourse.getCourseId() && courseRepo.findAll().get(i).getMaterialId() == Long.parseLong(materialId)) {
+						listCourse.add(courseRepo.findAll().get(i));
+					}
+				}
+			}
+			return new ResponseEntity<List<Course>>(listCourse ,HttpStatus.OK);
+		}catch(Error e) {
+            log.error("Couldn't serialize response for content type application/json", e);
+            return new ResponseEntity<List<Course>>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 	}
 
 	@Override
