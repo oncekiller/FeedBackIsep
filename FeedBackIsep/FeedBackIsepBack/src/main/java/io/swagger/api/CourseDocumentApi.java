@@ -32,9 +32,10 @@ public interface CourseDocumentApi {
         @ApiResponse(code = 400, message = "invalid input, object invalid"),
         @ApiResponse(code = 409, message = "an existing courseDocument already exists") })
     @RequestMapping(value = "/courseDocument",
+    	produces = { "application/json" },
         consumes = { "application/json" },
         method = RequestMethod.POST)
-    ResponseEntity<Void> addCourseDocument(@ApiParam(value = "courseDocument to add"  )  @Valid @RequestBody CourseDocument body);
+    ResponseEntity<CourseDocument> addCourseDocument(@ApiParam(value = "courseDocument to add"  )  @Valid @RequestBody CourseDocument body);
 
 
     @ApiOperation(value = "Delete a courseDocument", nickname = "deleteCourseDocument", notes = "Delete a courseDocument to the dataBase", response = String.class, tags={ "courseDocument", })
@@ -67,7 +68,7 @@ public interface CourseDocumentApi {
     @RequestMapping(value = "/courseDocument/{courseDocumentId}",
         produces = { "application/json", "application/xml" }, 
         method = RequestMethod.GET)
-    ResponseEntity<List<CourseDocument>> getCourseDocumentId(@ApiParam(value = "Id of the courseDocument to search",required=true) @PathVariable("courseDocumentId") String courseDocumentId);
+    ResponseEntity<CourseDocument> getCourseDocumentId(@ApiParam(value = "Id of the courseDocument to search",required=true) @PathVariable("courseDocumentId") String courseDocumentId);
 
 
     @ApiOperation(value = "Update an courseDocument", nickname = "updateCourseDocument", notes = "Update a courseDocument of the dataBase.", response = CourseDocument.class, tags={ "courseDocument", })
@@ -79,6 +80,6 @@ public interface CourseDocumentApi {
         produces = { "application/json", "application/xml" }, 
         consumes = { "application/json" },
         method = RequestMethod.PUT)
-    ResponseEntity<CourseDocument> updateCourseDocument(@ApiParam(value = "Updated courseDocument object" ,required=true )  @Valid @RequestBody CourseDocument body);
+    ResponseEntity<String> updateCourseDocument(@ApiParam(value = "Updated courseDocument object" ,required=true )  @Valid @RequestBody CourseDocument body);
 
 }

@@ -24,7 +24,7 @@ public class CourseDocumentApiControllerIntegrationTest {
     @Test
     public void addCourseDocumentTest() throws Exception {
         CourseDocument body = new CourseDocument();
-        ResponseEntity<Void> responseEntity = api.addCourseDocument(body);
+        ResponseEntity<CourseDocument> responseEntity = api.addCourseDocument(body);
         assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
     }
 
@@ -46,14 +46,14 @@ public class CourseDocumentApiControllerIntegrationTest {
     @Test
     public void getCourseDocumentIdTest() throws Exception {
         String courseDocumentId = "courseDocumentId_example";
-        ResponseEntity<List<CourseDocument>> responseEntity = api.getCourseDocumentId(courseDocumentId);
+        ResponseEntity<CourseDocument> responseEntity = api.getCourseDocumentId(courseDocumentId);
         assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
     }
 
     @Test
     public void updateCourseDocumentTest() throws Exception {
         CourseDocument body = new CourseDocument();
-        ResponseEntity<CourseDocument> responseEntity = api.updateCourseDocument(body);
+        ResponseEntity<String> responseEntity = api.updateCourseDocument(body);
         assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
     }
 

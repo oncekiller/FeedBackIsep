@@ -6,27 +6,41 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import org.springframework.validation.annotation.Validated;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.Valid;
 import javax.validation.constraints.*;
 
 /**
  * CourseDocument
  */
-@Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-06T03:38:36.462Z[GMT]")
+@Entity
+@Table(name = "course_documents")
 public class CourseDocument   {
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name= "id", nullable = false, unique = true)  	  
   @JsonProperty("id")
   private Long id = null;
-
+  
+  @Column(name = "name")
   @JsonProperty("name")
   private String name = null;
-
+  
+  @Column(name = "document")
   @JsonProperty("document")
   private String document = null;
-
-  @JsonProperty("userPost_id")
+  
+  @Column(name = "user_post_id")
+  @JsonProperty("user_post_id")
   private Long userPostId = null;
-
+  
+  @Column(name = "course_id")
   @JsonProperty("course_id")
   private Long courseId = null;
 
