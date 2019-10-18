@@ -32,9 +32,10 @@ public interface MessageApi {
         @ApiResponse(code = 400, message = "invalid input, object invalid"),
         @ApiResponse(code = 409, message = "an existing message already exists") })
     @RequestMapping(value = "/message",
+         produces = { "application/json" },  	
         consumes = { "application/json" },
         method = RequestMethod.POST)
-    ResponseEntity<Void> addMessage(@ApiParam(value = "Message to add"  )  @Valid @RequestBody Message body);
+    ResponseEntity<Message> addMessage(@ApiParam(value = "Message to add"  )  @Valid @RequestBody Message body);
 
 
     @ApiOperation(value = "Delete a message", nickname = "deleteMessage", notes = "Delete a message to the dataBase", response = String.class, tags={ "message", })
@@ -67,7 +68,7 @@ public interface MessageApi {
     @RequestMapping(value = "/message/{messageId}",
         produces = { "application/json", "application/xml" }, 
         method = RequestMethod.GET)
-    ResponseEntity<List<Message>> getMessageId(@ApiParam(value = "Id of the message to search",required=true) @PathVariable("messageId") String messageId);
+    ResponseEntity<Message> getMessageId(@ApiParam(value = "Id of the message to search",required=true) @PathVariable("messageId") String messageId);
 
 
     @ApiOperation(value = "Update an message", nickname = "updateMessage", notes = "update a message.", response = Message.class, tags={ "message", })
@@ -79,6 +80,6 @@ public interface MessageApi {
         produces = { "application/json", "application/xml" }, 
         consumes = { "application/json" },
         method = RequestMethod.PUT)
-    ResponseEntity<Message> updateMessage(@ApiParam(value = "Updated message object" ,required=true )  @Valid @RequestBody Message body);
+    ResponseEntity<String> updateMessage(@ApiParam(value = "Updated message object" ,required=true )  @Valid @RequestBody Message body);
 
 }

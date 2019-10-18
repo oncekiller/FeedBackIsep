@@ -24,7 +24,7 @@ public class MessageApiControllerIntegrationTest {
     @Test
     public void addMessageTest() throws Exception {
         Message body = new Message();
-        ResponseEntity<Void> responseEntity = api.addMessage(body);
+        ResponseEntity<Message> responseEntity = api.addMessage(body);
         assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
     }
 
@@ -45,14 +45,14 @@ public class MessageApiControllerIntegrationTest {
     @Test
     public void getMessageIdTest() throws Exception {
         String messageId = "messageId_example";
-        ResponseEntity<List<Message>> responseEntity = api.getMessageId(messageId);
+        ResponseEntity<Message> responseEntity = api.getMessageId(messageId);
         assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
     }
 
     @Test
     public void updateMessageTest() throws Exception {
         Message body = new Message();
-        ResponseEntity<Message> responseEntity = api.updateMessage(body);
+        ResponseEntity<String> responseEntity = api.updateMessage(body);
         assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
     }
 

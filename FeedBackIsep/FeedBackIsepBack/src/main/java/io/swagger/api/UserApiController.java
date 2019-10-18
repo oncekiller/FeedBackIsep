@@ -1,10 +1,12 @@
 package io.swagger.api;
 
+import io.swagger.model.Conversation;
 import io.swagger.model.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -30,6 +32,9 @@ public class UserApiController implements UserApi {
     private final ObjectMapper objectMapper;
 
     private final HttpServletRequest request;
+    
+    @Autowired
+    UserApiDelegate userApiDelegate;
 
     @org.springframework.beans.factory.annotation.Autowired
     public UserApiController(ObjectMapper objectMapper, HttpServletRequest request) {
@@ -37,65 +42,49 @@ public class UserApiController implements UserApi {
         this.request = request;
     }
 
-    public ResponseEntity<Void> addUser(@ApiParam(value = "User to add"  )  @Valid @RequestBody User body) {
+    public ResponseEntity<User> addUser(@ApiParam(value = "User to add"  )  @Valid @RequestBody User body) {
         String accept = request.getHeader("Accept");
-        return new ResponseEntity<Void>(HttpStatus.NOT_IMPLEMENTED);
+        if (accept != null && accept.contains("application/json")) {
+            return userApiDelegate.addUserImpl(body);
+        }      
+        return new ResponseEntity<User>(HttpStatus.BAD_REQUEST);
     }
 
     public ResponseEntity<String> deleteUser(@ApiParam(value = "The id that needs to be deleted",required=true) @PathVariable("userId") String userId) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
-            try {
-                return new ResponseEntity<String>(objectMapper.readValue("\"\"", String.class), HttpStatus.NOT_IMPLEMENTED);
-            } catch (IOException e) {
-                log.error("Couldn't serialize response for content type application/json", e);
-                return new ResponseEntity<String>(HttpStatus.INTERNAL_SERVER_ERROR);
-            }
-        }
-
-        return new ResponseEntity<String>(HttpStatus.NOT_IMPLEMENTED);
+            return userApiDelegate.deleteUserImpl(userId);
+        }    
+        return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
     }
 
     public ResponseEntity<List<User>> getAllUsers(@ApiParam(value = "Isep id of the user to search") @Valid @RequestParam(value = "isepId", required = false) String isepId) {
+    	String accept = request.getHeader("Accept");
+        if (accept != null && accept.contains("application/json")) {
+       	 if(isepId != null) {
+       		 return userApiDelegate.getUserIsepIdImpl(isepId);
+            }
+       	 if(isepId == null) {
+           	 return userApiDelegate.getAllUserImpl();
+       	 }        	 
+        }    	 
+        return new ResponseEntity<List<User>>(HttpStatus.BAD_REQUEST);    
+       }
+
+    public ResponseEntity<User> getUserId(@ApiParam(value = "Id of the user to search",required=true) @PathVariable("userId") String userId) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
-            try {
-                return new ResponseEntity<List<User>>(objectMapper.readValue("[ {\n  \"firstname\" : \"Antoine\",\n  \"password\" : \"root\",\n  \"mail\" : \"canard.antoine@gmail.com\",\n  \"color\" : \"#222222\",\n  \"satus\" : \"ROLE_TEACHER\",\n  \"parent_id\" : 11,\n  \"isep_id\" : 9236,\n  \"id\" : 11,\n  \"avatar\" : \"./pictureAvatar\",\n  \"enabled\" : true,\n  \"username\" : \"acanard\",\n  \"lastname\" : \"CANARD\"\n}, {\n  \"firstname\" : \"Antoine\",\n  \"password\" : \"root\",\n  \"mail\" : \"canard.antoine@gmail.com\",\n  \"color\" : \"#222222\",\n  \"satus\" : \"ROLE_TEACHER\",\n  \"parent_id\" : 11,\n  \"isep_id\" : 9236,\n  \"id\" : 11,\n  \"avatar\" : \"./pictureAvatar\",\n  \"enabled\" : true,\n  \"username\" : \"acanard\",\n  \"lastname\" : \"CANARD\"\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
-            } catch (IOException e) {
-                log.error("Couldn't serialize response for content type application/json", e);
-                return new ResponseEntity<List<User>>(HttpStatus.INTERNAL_SERVER_ERROR);
-            }
+        	return userApiDelegate.getUserIdImpl(userId);
         }
-
-        return new ResponseEntity<List<User>>(HttpStatus.NOT_IMPLEMENTED);
+        return new ResponseEntity<User>(HttpStatus.BAD_REQUEST);
     }
 
-    public ResponseEntity<List<User>> getUserId(@ApiParam(value = "Id of the user to search",required=true) @PathVariable("userId") String userId) {
+    public ResponseEntity<String> updateUser(@ApiParam(value = "Updated user object" ,required=true )  @Valid @RequestBody User body) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
-            try {
-                return new ResponseEntity<List<User>>(objectMapper.readValue("[ {\n  \"firstname\" : \"Antoine\",\n  \"password\" : \"root\",\n  \"mail\" : \"canard.antoine@gmail.com\",\n  \"color\" : \"#222222\",\n  \"satus\" : \"ROLE_TEACHER\",\n  \"parent_id\" : 11,\n  \"isep_id\" : 9236,\n  \"id\" : 11,\n  \"avatar\" : \"./pictureAvatar\",\n  \"enabled\" : true,\n  \"username\" : \"acanard\",\n  \"lastname\" : \"CANARD\"\n}, {\n  \"firstname\" : \"Antoine\",\n  \"password\" : \"root\",\n  \"mail\" : \"canard.antoine@gmail.com\",\n  \"color\" : \"#222222\",\n  \"satus\" : \"ROLE_TEACHER\",\n  \"parent_id\" : 11,\n  \"isep_id\" : 9236,\n  \"id\" : 11,\n  \"avatar\" : \"./pictureAvatar\",\n  \"enabled\" : true,\n  \"username\" : \"acanard\",\n  \"lastname\" : \"CANARD\"\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
-            } catch (IOException e) {
-                log.error("Couldn't serialize response for content type application/json", e);
-                return new ResponseEntity<List<User>>(HttpStatus.INTERNAL_SERVER_ERROR);
-            }
+        	return userApiDelegate.updateUserImpl(body);
         }
-
-        return new ResponseEntity<List<User>>(HttpStatus.NOT_IMPLEMENTED);
-    }
-
-    public ResponseEntity<User> updateUser(@ApiParam(value = "Updated user object" ,required=true )  @Valid @RequestBody User body) {
-        String accept = request.getHeader("Accept");
-        if (accept != null && accept.contains("application/json")) {
-            try {
-                return new ResponseEntity<User>(objectMapper.readValue("{\n  \"firstname\" : \"Antoine\",\n  \"password\" : \"root\",\n  \"mail\" : \"canard.antoine@gmail.com\",\n  \"color\" : \"#222222\",\n  \"satus\" : \"ROLE_TEACHER\",\n  \"parent_id\" : 11,\n  \"isep_id\" : 9236,\n  \"id\" : 11,\n  \"avatar\" : \"./pictureAvatar\",\n  \"enabled\" : true,\n  \"username\" : \"acanard\",\n  \"lastname\" : \"CANARD\"\n}", User.class), HttpStatus.NOT_IMPLEMENTED);
-            } catch (IOException e) {
-                log.error("Couldn't serialize response for content type application/json", e);
-                return new ResponseEntity<User>(HttpStatus.INTERNAL_SERVER_ERROR);
-            }
-        }
-
-        return new ResponseEntity<User>(HttpStatus.NOT_IMPLEMENTED);
+        return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
     }
 
 }

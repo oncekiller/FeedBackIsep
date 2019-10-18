@@ -32,9 +32,10 @@ public interface UserApi {
         @ApiResponse(code = 400, message = "invalid input, object invalid"),
         @ApiResponse(code = 409, message = "an existing user already exists") })
     @RequestMapping(value = "/user",
+        produces = { "application/json" }, 
         consumes = { "application/json" },
         method = RequestMethod.POST)
-    ResponseEntity<Void> addUser(@ApiParam(value = "User to add"  )  @Valid @RequestBody User body);
+    ResponseEntity<User> addUser(@ApiParam(value = "User to add"  )  @Valid @RequestBody User body);
 
 
     @ApiOperation(value = "Delete a user", nickname = "deleteUser", notes = "Delete a user to the dataBase", response = String.class, tags={ "user", })
@@ -67,7 +68,7 @@ public interface UserApi {
     @RequestMapping(value = "/user/{userId}",
         produces = { "application/json", "application/xml" }, 
         method = RequestMethod.GET)
-    ResponseEntity<List<User>> getUserId(@ApiParam(value = "Id of the user to search",required=true) @PathVariable("userId") String userId);
+    ResponseEntity<User> getUserId(@ApiParam(value = "Id of the user to search",required=true) @PathVariable("userId") String userId);
 
 
     @ApiOperation(value = "Update an user", nickname = "updateUser", notes = "This can only be done by the logged in user.", response = User.class, tags={ "user", })
@@ -79,6 +80,6 @@ public interface UserApi {
         produces = { "application/json", "application/xml" }, 
         consumes = { "application/json" },
         method = RequestMethod.PUT)
-    ResponseEntity<User> updateUser(@ApiParam(value = "Updated user object" ,required=true )  @Valid @RequestBody User body);
+    ResponseEntity<String> updateUser(@ApiParam(value = "Updated user object" ,required=true )  @Valid @RequestBody User body);
 
 }

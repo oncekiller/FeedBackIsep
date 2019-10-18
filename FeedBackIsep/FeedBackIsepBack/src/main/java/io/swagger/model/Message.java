@@ -1,5 +1,6 @@
 package io.swagger.model;
 
+import java.util.Date;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -7,32 +8,47 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import org.threeten.bp.OffsetDateTime;
 import org.springframework.validation.annotation.Validated;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.Valid;
 import javax.validation.constraints.*;
 
 /**
  * Message
  */
-@Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-06T03:38:36.462Z[GMT]")
+@Entity
+@Table(name = "messages")
 public class Message   {
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name= "id", nullable = false, unique = true)    
   @JsonProperty("id")
   private Long id = null;
 
+  @Column(name = "conversation_id")
   @JsonProperty("conversation_id")
   private Long conversationId = null;
 
+  @Column(columnDefinition="tinyint(1)", name = "is_from_sender")
   @JsonProperty("is_from_sender")
   private Boolean isFromSender = null;
 
+  @Column(name = "content")
   @JsonProperty("content")
   private String content = null;
 
+  @Column(columnDefinition="tinyint(1)",name = "is_read")
   @JsonProperty("is_read")
   private Boolean isRead = null;
 
+  @Column(name = "date_time")
   @JsonProperty("date_time")
-  private OffsetDateTime dateTime = null;
+  private Date dateTime = null;
 
   public Message id(Long id) {
     this.id = id;
@@ -134,7 +150,7 @@ public class Message   {
     this.isRead = isRead;
   }
 
-  public Message dateTime(OffsetDateTime dateTime) {
+  public Message dateTime(Date dateTime) {
     this.dateTime = dateTime;
     return this;
   }
@@ -147,11 +163,11 @@ public class Message   {
   @NotNull
 
   @Valid
-  public OffsetDateTime getDateTime() {
+  public Date getDateTime() {
     return dateTime;
   }
 
-  public void setDateTime(OffsetDateTime dateTime) {
+  public void setDateTime(Date dateTime) {
     this.dateTime = dateTime;
   }
 

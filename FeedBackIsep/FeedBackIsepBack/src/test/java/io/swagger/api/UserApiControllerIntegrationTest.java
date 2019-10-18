@@ -24,7 +24,7 @@ public class UserApiControllerIntegrationTest {
     @Test
     public void addUserTest() throws Exception {
         User body = new User();
-        ResponseEntity<Void> responseEntity = api.addUser(body);
+        ResponseEntity<User> responseEntity = api.addUser(body);
         assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
     }
 
@@ -45,14 +45,14 @@ public class UserApiControllerIntegrationTest {
     @Test
     public void getUserIdTest() throws Exception {
         String userId = "userId_example";
-        ResponseEntity<List<User>> responseEntity = api.getUserId(userId);
+        ResponseEntity<User> responseEntity = api.getUserId(userId);
         assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
     }
 
     @Test
     public void updateUserTest() throws Exception {
         User body = new User();
-        ResponseEntity<User> responseEntity = api.updateUser(body);
+        ResponseEntity<String> responseEntity = api.updateUser(body);
         assertEquals(HttpStatus.NOT_IMPLEMENTED, responseEntity.getStatusCode());
     }
 

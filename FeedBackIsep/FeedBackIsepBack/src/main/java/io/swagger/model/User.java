@@ -6,48 +6,69 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import org.springframework.validation.annotation.Validated;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.Valid;
 import javax.validation.constraints.*;
 
 /**
  * User
  */
-@Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-09-06T03:38:36.462Z[GMT]")
+@Entity
+@Table(name = "users")
 public class User   {
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name= "id", nullable = false, unique = true)  
   @JsonProperty("id")
   private Long id = null;
 
+  @Column(name = "username")
   @JsonProperty("username")
   private String username = null;
-
+  
+  @Column(name = "firstname")
   @JsonProperty("firstname")
   private String firstname = null;
 
+  @Column(name = "lastname")
   @JsonProperty("lastname")
   private String lastname = null;
 
-  @JsonProperty("satus")
-  private String satus = null;
+  @Column(name = "status")
+  @JsonProperty("status")
+  private String status = null;
 
+  @Column(name = "isep_id")
   @JsonProperty("isep_id")
   private Long isepId = null;
 
+  @Column(name = "mail")
   @JsonProperty("mail")
   private String mail = null;
 
+  @Column(name = "password")
   @JsonProperty("password")
   private String password = null;
 
+  @Column(name = "avatar")
   @JsonProperty("avatar")
   private String avatar = null;
 
+  @Column(name = "color")
   @JsonProperty("color")
   private String color = null;
 
+  @Column(name = "parent_id")
   @JsonProperty("parent_id")
   private Long parentId = null;
 
+  @Column(columnDefinition="tinyint(1)", name = "enabled")
   @JsonProperty("enabled")
   private Boolean enabled = null;
 
@@ -131,23 +152,23 @@ public class User   {
     this.lastname = lastname;
   }
 
-  public User satus(String satus) {
-    this.satus = satus;
+  public User status(String status) {
+    this.status = status;
     return this;
   }
 
   /**
-   * Get satus
-   * @return satus
+   * Get status
+   * @return status
   **/
   @ApiModelProperty(example = "ROLE_TEACHER", value = "")
 
-  public String getSatus() {
-    return satus;
+  public String getStatus() {
+    return status;
   }
 
-  public void setSatus(String satus) {
-    this.satus = satus;
+  public void setStatus(String status) {
+    this.status = status;
   }
 
   public User isepId(Long isepId) {
@@ -303,7 +324,7 @@ public class User   {
         Objects.equals(this.username, user.username) &&
         Objects.equals(this.firstname, user.firstname) &&
         Objects.equals(this.lastname, user.lastname) &&
-        Objects.equals(this.satus, user.satus) &&
+        Objects.equals(this.status, user.status) &&
         Objects.equals(this.isepId, user.isepId) &&
         Objects.equals(this.mail, user.mail) &&
         Objects.equals(this.password, user.password) &&
@@ -315,7 +336,7 @@ public class User   {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, username, firstname, lastname, satus, isepId, mail, password, avatar, color, parentId, enabled);
+    return Objects.hash(id, username, firstname, lastname, status, isepId, mail, password, avatar, color, parentId, enabled);
   }
 
   @Override
@@ -327,7 +348,7 @@ public class User   {
     sb.append("    username: ").append(toIndentedString(username)).append("\n");
     sb.append("    firstname: ").append(toIndentedString(firstname)).append("\n");
     sb.append("    lastname: ").append(toIndentedString(lastname)).append("\n");
-    sb.append("    satus: ").append(toIndentedString(satus)).append("\n");
+    sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    isepId: ").append(toIndentedString(isepId)).append("\n");
     sb.append("    mail: ").append(toIndentedString(mail)).append("\n");
     sb.append("    password: ").append(toIndentedString(password)).append("\n");
