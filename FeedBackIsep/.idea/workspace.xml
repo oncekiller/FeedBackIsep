@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f6817e6-a77d-4cf9-ac88-a4f03499fc24" name="Default Changelist" comment="" />
+    <list default="true" id="8f6817e6-a77d-4cf9-ac88-a4f03499fc24" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/feedbackisepfront/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feedbackisepfront/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feedbackisepfront/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/feedbackisepfront/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feedbackisepfront/src/components/CalendarContainer/CoursesPanel/CourseCase/courseCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/feedbackisepfront/src/components/CalendarContainer/CoursesPanel/CourseCase/courseCase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feedbackisepfront/src/components/CalendarContainer/CoursesPanel/coursesPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/feedbackisepfront/src/components/CalendarContainer/CoursesPanel/coursesPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feedbackisepfront/src/components/CalendarContainer/calenderContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/feedbackisepfront/src/components/CalendarContainer/calenderContainer.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/FeedBackIsepBack/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +28,6 @@
               <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FeedBackIsepBack/src/main/main.iml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -65,13 +66,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FeedBackIsepBack/src/main/java/io/swagger/api/MessageApiController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+            <state relative-caret-position="442">
+              <caret line="48" column="15" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-14" />
@@ -79,60 +83,22 @@
     <option name="width" value="2586" />
     <option name="height" value="1466" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="FeedBackIsep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FeedBackIsepBack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FeedBackIsep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FeedBackIsepBack" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FeedBackIsep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FeedBackIsepBack" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FeedBackIsep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FeedBackIsepBack" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FeedBackIsep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FeedBackIsepBack" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="swagger" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FeedBackIsep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../repository/FeedBackIsep" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/feedbackisepfront" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -202,16 +168,17 @@
       <workItem from="1567303134633" duration="624000" />
       <workItem from="1567306016465" duration="112000" />
       <workItem from="1567394157846" duration="26000" />
+      <workItem from="1573470305059" duration="99000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1512000" />
+    <option name="totallyTimeSpent" value="1611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="-6" width="1231" height="733" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26257458" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26683718" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1092,15 +1059,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FeedBackIsepBack/src/main/main.iml" />
     <entry file="file://$PROJECT_DIR$/FeedBackIsepBack/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeedBackIsepBack/src/main/main.iml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/FeedBackIsepBack/src/main/java/io/swagger/Swagger2SpringBoot.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1131,8 +1096,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FeedBackIsepBack/src/main/java/io/swagger/api/MessageApiController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+        <state relative-caret-position="442">
+          <caret line="48" column="15" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
         </state>
       </provider>
     </entry>
